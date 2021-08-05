@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/js/layui/css/layui.css">
+    <link rel="stylesheet" href="static/css/admin.css">
+    <title>旅业盒子</title>
+</head>
+
+<body>
+    <div class="header-con flex-box">
+        <div class="logo">
+            <img src="static/img/logo.png">
+        </div>
+        <div class="lxs layui-nav">
+            <div class="lxs-name"><i class="iconfont icon-qiye"></i>厦门宝中旅行社</div>
+            <div class="layui-nav-item c-blue">
+                <a href="javascript:;" class="">切换</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">选项1</a></dd>
+                    <dd><a href="">选项2</a></dd>
+                    <dd><a href="">选项3</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="login-status layui-nav">
+            <div class="layui-nav-item">
+                <a href="javascript:;">欢迎您，陈明明</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">选项1</a></dd>
+                    <dd><a href="">选项2</a></dd>
+                    <dd><a href="">选项3</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="left-con">
+        <div class="scroll-con">
+            <dl>
+                <dt>
+                    <a href="javascript:;">
+                        <i class="iconfont icon-shouye"></i>
+                        <cite>首页</cite>
+                    </a>
+                </dt>
+            </dl>
+            <dl class="open">
+                <dt href="javascript:;">
+                    <i class="iconfont icon-renwuguanli"></i>
+                    <cite>任务管理</cite>
+                    <i class="iconfont icon-angle-down"></i>
+                </dt>
+                <dd>
+                    <a href="" class="on">任务管理</a>
+                    <a href="">申请开票</a>
+                    <a href="">开票记录</a>
+                    <a href="">完税凭证</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt href="javascript:;">
+                    <i class="iconfont icon-lingkeguanli"></i>
+                    <cite>零客管理</cite>
+                    <i class="iconfont icon-angle-down"></i>
+                </dt>
+                <dd>
+                    <a href="">采购订单</a>
+                    <a href="">分销订单</a>
+                    <a href="">保险订单</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt href="javascript:;">
+                    <i class="iconfont icon-fuwushang"></i>
+                    <cite>服务商</cite>
+                    <i class="iconfont icon-angle-down"></i>
+                </dt>
+                <dd>
+                    <a href="">邀请分销商</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt href="javascript:;">
+                    <i class="iconfont icon-caiwu1"></i>
+                    <cite>财务</cite>
+                    <i class="iconfont icon-angle-down"></i>
+                </dt>
+                <dd>
+                    <a href="">资金管理</a>
+                    <a href="">提现申请</a>
+                    <a href="">发票管理</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt href="javascript:;">
+                    <i class="iconfont icon-shezhi"></i>
+                    <cite>设置</cite>
+                    <i class="iconfont icon-angle-down"></i>
+                </dt>
+                <dd>
+                    <a href="">常用信息</a>
+                    <a href="">账号信息</a>
+                    <a href="">修改密码</a>
+                </dd>
+            </dl>
+        </div>
+        <a href="javascript:;" class="btn-side J-btn-side"><i class="iconfont icon-left"></i></a>
+    </div>
+    <div class="body-con">
+        <div class="body-wrap">
+            <div class="ndwz">
+                <a href="">首页</a> > <a href="">任务管理</a> > <span>任务详情</span>
+            </div>
+            <div class="layui-card pd-20 layui-form">
+                <div class="ui-tit">
+                    <b>任务结算</b>
+                </div>
+                <div class="tips-con mg-t-20">
+                    <i class="iconfont icon-tishitubiao"></i>
+                    <b>温馨提示：</b>
+                    <p>
+                        1.请根据任务成果，验收零客是否完成任务。<br>
+                        2.未确认的零客，将收不到任务佣金。
+                    </p>
+                </div>
+                <div class="layui-card-body">
+                    <table class="table-flex mg-t-20">
+                        <tbody>
+                            <tr>
+                                <th>任务佣金：</th>
+                                <td>￥500</td>
+                                <th>零客人数：</th>
+                                <td>30人</td>
+                                <th></th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>可结算金额：</th>
+                                <td>￥500</td>
+                                <th>结算人数：</th>
+                                <td>30人</td>
+                                <th></th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>不可结算金额：</th>
+                                <td>￥0.00</td>
+                                <th>不结算人数：</th>
+                                <td>30人</td>
+                                <th></th>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="ui-tit mg-t-20">
+                    <b>待结算名单</b>
+                </div>
+                <div class="layui-card-body">
+                    <div class="mod-filter mg-t-10">
+                        <div class="layui-input-inline">
+                            <input type="text" name="" value="" placeholder="姓名/手机号/证件号" autocomplete="off"
+                                class="layui-input ui-w200">
+                        </div>
+                        <div class="layui-input-inline">
+                            <a class="layui-btn btn-normal J-advanced-submit">搜索</a>
+                        </div>
+                    </div>
+                    <table class="layui-table mg-t-10" lay-filter="table-list">
+                        <thead>
+                            <tr>
+                                <th width="50">
+                                    <input type="checkbox" name="checkboxAll" class="J-check-all" lay-filter="checkboxAll" value=""
+                                        lay-skin="primary" title="全选">
+                                </th>
+                                <th width="">零客任务编号</th>
+                                <th width="120">手机号</th>
+                                <th width="100">姓名</th>
+                                <th width="">证件号</th>
+                                <th width="120" class="text-r">任务金额</th>
+                                <th width="150" class="text-r">承包收入金额</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" name="check" class="J-check-item" lay-filter="check" value="1" lay-skin="primary"
+                                        title=""></td>
+                                <td>11022020122115</td>
+                                <td>15966055220</td>
+                                <td>陈敏敏</td>
+                                <td>35021219901206056</td>
+                                <td class="text-r">100.00</td>
+                                <td class="text-r">9.00</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="check" class="J-check-item" lay-filter="check" value="2" lay-skin="primary"
+                                        title=""></td>
+                                <td>11022020122115</td>
+                                <td>15966055220</td>
+                                <td>陈敏敏</td>
+                                <td>35021219901206056</td>
+                                <td class="text-r">100.00</td>
+                                <td class="text-r">9.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- <div class="btn-con mg-t-10">
+                        <a href="" class="layui-btn plain">返回列表</a>
+                        <a href="" class="layui-btn btn-normal">立即结算</a>
+                    </div> -->
+                </div>
+                <div class="sticky-bottom mg-t-20">
+                    <div class="layui-input-inline mg-r-20 c-999">实际结算人数：<span class="c-333">4人</span>&emsp;&emsp;实际结算任务佣金：<span
+                        class="c-orange">￥60.00</span></div>
+                    <a href="javascript:;" class="layui-btn btn-lg plain">返回列表</a>
+                    <a href="javascript:;" class="layui-btn btn-lg btn-normal J-btn-next">立即结算</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/html" id="tpl-mobile-qrcode">
+    <div class="qrcode text-c" data-url="{{#qrcode_url}}">
+        <p>手机扫码预订产品：</p>
+        <div id="qrcode_order" class="text-c sub-img-auto mg-t-10"></div>
+    </div>
+</script>
+    <script src="static/js/layui/layui.js"></script>
+    <script src="static/js/layui/config.js"></script>
+    <!-- <script src="static/js/qrcode.min.js"></script> -->
+
+    <script>
+        layui.use(['laydate', 'layer', 'table', 'form', 'upload', 'element', 'laytpl'], function () {
+            var $ = layui.jquery
+                , laydate = layui.laydate //日期
+                , layer = layui.layer //弹层
+                , table = layui.table // 表格
+                , form = layui.form //表单
+                , upload = layui.upload
+                , element = layui.element //元素操作
+                , laytpl = layui.laytpl
+
+
+            //日期范围
+            laydate.render({
+                elem: '#start_date'
+                , range: true
+            });
+
+
+            //全选
+            form.on('checkbox(checkboxAll)', function (data) {
+                var table = $(data.elem).parents('.layui-table'),
+                childs = table.find('.J-check-item');
+                data.elem.checked ? childs.prop('checked', true) : childs.prop('checked', false);
+                table.find('tr').addClass('on')
+                form.render();
+            });
+
+            form.on('checkbox(check)', function (data) {
+                var table = $(data.elem).parents('.layui-table'),
+                    checkall = table.find('.J-check-all'),
+                    check_item = table.find('.J-check-item'),
+                    item_len = check_item.length,
+                    check_len = table.find('.J-check-item:checked').length;
+                    
+                // console.log(item_len, check_len)
+                item_len == check_len ? checkall.prop('checked', true) : checkall.prop('checked', false);
+                form.render();
+            });
+
+
+        })
+
+    </script>
+</body>
+
+</html>

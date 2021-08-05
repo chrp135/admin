@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/js/layui/css/layui.css">
+    <link rel="stylesheet" href="static/css/admin.css">
+    <title>旅业盒子</title>
+</head>
+
+<body>
+    <div class="header-con flex-box">
+        <div class="logo">
+            <img src="static/img/logo.png">
+        </div>
+        <div class="lxs layui-nav">
+            <div class="lxs-name"><i class="iconfont icon-qiye"></i>厦门宝中旅行社</div>
+            <div class="layui-nav-item c-blue">
+                <a href="javascript:;" class="">切换</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">选项1</a></dd>
+                    <dd><a href="">选项2</a></dd>
+                    <dd><a href="">选项3</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="login-status layui-nav">
+            <div class="layui-nav-item">
+                <a href="javascript:;">欢迎您，陈明明</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">选项1</a></dd>
+                    <dd><a href="">选项2</a></dd>
+                    <dd><a href="">选项3</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="left-con">
+        <div class="scroll-con">
+                <dl>
+                    <dt>
+                        <a href="javascript:;">
+                            <i class="iconfont icon-shouye"></i>
+                            <cite>首页</cite>
+                        </a>
+                    </dt>
+                </dl>
+                <dl class="open">
+                    <dt href="javascript:;">
+                        <i class="iconfont icon-renwuguanli"></i>
+                        <cite>任务管理</cite>
+                        <i class="iconfont icon-angle-down"></i>
+                    </dt>
+                    <dd>
+                        <a href="" class="on">任务管理</a>
+                        <a href="">申请开票</a>
+                        <a href="">开票记录</a>
+                        <a href="">完税凭证</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt href="javascript:;">
+                        <i class="iconfont icon-lingkeguanli"></i>
+                        <cite>零客管理</cite>
+                        <i class="iconfont icon-angle-down"></i>
+                    </dt>
+                    <dd>
+                        <a href="">采购订单</a>
+                        <a href="">分销订单</a>
+                        <a href="">保险订单</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt href="javascript:;">
+                        <i class="iconfont icon-fuwushang"></i>
+                        <cite>服务商</cite>
+                        <i class="iconfont icon-angle-down"></i>
+                    </dt>
+                    <dd>
+                        <a href="">邀请分销商</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt href="javascript:;">
+                        <i class="iconfont icon-caiwu1"></i>
+                        <cite>财务</cite>
+                        <i class="iconfont icon-angle-down"></i>
+                    </dt>
+                    <dd>
+                        <a href="">资金管理</a>
+                        <a href="">提现申请</a>
+                        <a href="">发票管理</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt href="javascript:;">
+                        <i class="iconfont icon-shezhi"></i>
+                        <cite>设置</cite>
+                        <i class="iconfont icon-angle-down"></i>
+                    </dt>
+                    <dd>
+                        <a href="">常用信息</a>
+                        <a href="">账号信息</a>
+                        <a href="">修改密码</a>
+                    </dd>
+                </dl>
+        </div>
+        <a href="javascript:;" class="btn-side J-btn-side"><i class="iconfont icon-left"></i></a>
+    </div>
+    <div class="body-con layui-form">
+        <div class="body-wrap">
+            <div class="ndwz">
+                首页 > <a href="">任务管理</a>
+            </div>
+            <div class="ui-tag-tit">
+                <ul>
+                    <li><a href="javascript:;" class="on">发布任务</a></li>
+                </ul>
+            </div>
+            <div class="layui-card pd-20">
+                <div class="layui-card-body">
+                    <div class="step-con vh80">
+                        <ul>
+                            <li class="on"><sub></sub><span>选择服务商</span></li>
+                            <li class="on current"><sub></sub><span>项目任务配置</span></li>
+                            <li><sub></sub><span>邀请零客</span></li>
+                            <li><sub></sub><span>确定发布</span></li>
+                        </ul>
+                    </div>
+                    <table class="table-flex table-form mg-t-20 th-w-120">
+                        <tbody>
+                            <tr>
+                                <th><sup>*</sup>外包服务商：</th>
+                                <td>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="" value="3501265987744" placeholder="" class="layui-input ui-w300">
+                                    </div>
+                                    <i class="iconfont icon-zhushi J-why-l" data-title="可退票，有退票手续费，详情咨询客服021-52830800"></i>
+                                </td>
+                                <th><sup>*</sup>任务开始：</th>
+                                <td>
+                                    <div class="layui-input-inline ui-w200 input-date">
+                                        <input type="text" name="start_date" value="" class="layui-input input-date" id="start_date" readonly="readonly">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><sup>*</sup>任务名称：</th>
+                                <td>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="username" lay-verify="required|username" lay-reqText="" value="厦门宝中国际旅行社" placeholder="" class="layui-input ui-w300">
+                                    </div>
+                                    <i class="iconfont icon-zhushi J-why-r" data-title="可退票，有退票手续费，详情咨询客服021-52830800"></i>
+                                </td>
+                                <th><sup>*</sup>任务结束：</th>
+                                <td>
+                                    <div class="layui-input-inline ui-w200 input-date">
+                                        <input type="text" name="end_date" value="" class="layui-input input-date" id="end_date" readonly="readonly">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><sup>*</sup>任务类型：</th>
+                                <td>
+                                    <span class="task-type">企业经营类/软件开发</span>
+                                    <a href="javascrip:;" class="layui-btn plain J-change-type">选择</a>
+                                </td>
+                                <th>任务时长：</th>
+                                <td>3天</td>
+                            </tr>
+                            <tr>
+                                <th>任务说明：</th>
+                                <td>
+                                    <textarea name="" id="" class="layui-textarea"></textarea>
+                                    <div class="xieyi">
+                                        <input type="checkbox" name="checkboxAll" lay-skin="primary" title="">
+                                        <span>同意旅业盒子<a href="javascript:;" class="J-xieyi">《项目承包经营服务协议》</a>，任务发布后协议即可生效</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="sticky-bottom mg-t-20">
+                    <a href="javascript:;" class="layui-btn btn-lg plain btn-grey">取消</a>
+                    <a href="javascript:;" class="layui-btn btn-lg plain">上一步</a>
+                    <a href="javascript:;" class="layui-btn btn-lg J-btn-next">下一步</a>
+                </div>
+            </div>
+            
+            <!-- <div class="footer-btn">
+                <a href="" class="layui-btn btn-lg plain">取消</a>
+                <a href="" class="layui-btn btn-lg btn-normal">确认完成</a>
+            </div> -->
+        </div>
+        <!-- <div class="footer-con">
+            &copy; Copyright 2020 多多优采&emsp;|&emsp;技术支持：<a>厦门市旅动力信息有限公司</a>
+        </div> -->
+    </div>
+
+
+<script type="text/html" id="tpl-detail-con">
+    <div class="layer-wrap layui-form h-auto">
+        <div class="side-bar">
+            <div class="ui-tit">
+                <b>管理类服务</b>
+            </div>
+            <div class="nav-con">
+                <a href="javascript:;">企业经营管理类</a>
+            </div>
+            <div class="ui-tit">
+                <b>研发类服务</b>
+            </div>
+            <div class="nav-con">
+                <a href="javascript:;" class="on">技术咨询类</a>
+                <a href="javascript:;">技术咨询类</a>
+                <a href="javascript:;">技术咨询类</a>
+                <a href="javascript:;">技术咨询类</a>
+                <a href="javascript:;">技术评审类</a>
+            </div>
+            <div class="ui-tit">
+                <b>软件开发类企业</b>
+            </div>
+            <div class="nav-con">
+                <a href="javascript:;">IT项目管理类</a>
+                <a href="javascript:;">技术研发类</a>
+            </div>
+            <div class="nav-con">
+                <a href="javascript:;" class="on">技术咨询类</a>
+                <a href="javascript:;">技术咨询类</a>
+                <a href="javascript:;">技术咨询类</a>
+                <a href="javascript:;">技术咨询类</a>
+                <a href="javascript:;">技术评审类</a>
+            </div>
+            <div class="ui-tit">
+                <b>软件开发类企业</b>
+            </div>
+            <div class="nav-con">
+                <a href="javascript:;">IT项目管理类</a>
+                <a href="javascript:;">技术研发类</a>
+            </div>
+        </div>
+        <div class="side-con">
+            <div class="radio-item">
+                <label><input type="radio" name="radio1" value="1" title="软件开发" checked=""></label>
+                <ul>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                </ul>
+            </div>
+            <div class="radio-item">
+                <label><input type="radio" name="radio1" value="1" title="软件开发" checked=""></label>
+                <ul>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                </ul>
+            </div>
+            <div class="radio-item">
+                <label><input type="radio" name="radio1" value="1" title="软件开发" checked=""></label>
+                <ul>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                </ul>
+            </div>
+            <div class="radio-item">
+                <label><input type="radio" name="radio1" value="1" title="软件开发" checked=""></label>
+                <ul>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                </ul>
+            </div>
+            <div class="radio-item">
+                <label><input type="radio" name="radio1" value="1" title="软件开发" checked=""></label>
+                <ul>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                </ul>
+            </div>
+            <div class="radio-item">
+                <label><input type="radio" name="radio1" value="1" title="软件开发" checked=""></label>
+                <ul>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                    <li>*信息技术服务*信息系统服务(税率6%) </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/html" id="tpl-xieyi">
+    <h3>平台个人经营者承包经营合同</h3>
+    <div class="text-con">
+        <p>欢迎您与家有活及合作供应商下（以下简称“我们”）共同签署《承包经营合同》（以下简称“本合同”），我们通过旅业盒子互联网承包经营平台（以下简称“平台”）摄合交易，可为您提供各项服务，主要包括基于您的资质和劳动技能为您智能匹配适合的生产经营活动任务以及核算承包经营收入等。您点击同意接受，本合同则立即生效，并对双方产生约束力。</p>
+        <strong>一、合作内容</strong>
+        <p>1.我们依托互联网承包经营平台，承接企业业务，由我们将承包的业务众包给您完成，订单信息如下：<br>
+        承包商：陈飛宏<br>
+        承包商身份证号：50010219910218526X<br>
+        任务订单号：11012020111910104927010100000009<br>
+        发布时间：2020-11-17 10:10:49<br>
+        任务周期：2020-11-18 00:00:00 - 2020-11-19 23:59:59<br>
+        任务名称：在某某地开发旅游项目<br>
+        任务类型：业务流程优化服务<br>
+        支付方式：线下银行汇款<br>
+        总价：18.2元</p>
+        <p>2.您是我们通过平台智能筛选出的符合要求的服务提供商（承包商），您与合作供应商方建立承包经营关系，您通过我们平台承接任务、交付成果、领取税后生产经营收入、委托办理涉税事宜等。</p>
+        <p>3. 合作供应商：包括但不限于海南众用工商务服务有限公司、云南麦易网络科技有限责任公司、阜新市太平区平隆计算机科技有限公司、南漳鼎丽计算机科技有限公司、霍尔果斯伟航科技有限公司、河南汉牛智能科技有限公司（平台实际选用的合作供应商，以平台根据业务需求确认的为准。）
+        <strong>二、任务认领</strong></p>
+        <p>1.您通过我们平台、客户端、公众号等形式承接任务，生产经营收入、交付验收标准、业务类型等具体任务信息以系统记录信息为准。</p>
+        <p>2.如我们的企业客户对任务需求做出调整，我们便根据调整内容对您做出任务需求调整通知，您如接受任务需求调整，则双方就调整后的任务建立承包经营关系；您如拒绝调整，则双方基于调整前的业务建立的承包经营关系至此终止，双方不再互负违约责任及债权债务。
+        <strong>三、任务成果交付</strong></p>
+        <p>1.您应当在规定的时间内完成承接的任务成果，并向我们交付具体任务成果，如我们按照成果验收标准验收交付的任务成果后认定不合格或您未提交任务成果，直至您提交合格的任务成果前，我们可暂停发放生产经营收入。</p>
+        <p>2.您交付的具体任务成果需和具体承接的任务保持一致，具体任务类型、明细以系统记录信息为准。
+        <strong>四、生产经营收入及支付方式</strong></p>
+        <p>1.您每笔生产经营收入以具体承接业务时平台显示的金额数据为准。</p>
+        <p>2.我们确认任务完成交付后，您可通过我们微信客户端进行“提现”操作，我们接受到该指令后，将经营收入转入您提供银行账户。
+        <strong>五、违约责任</strong></p>
+        <p>1.任何一方违反本合同约定，即构成该方的违约。除本合同另有规定外，违约方应向守约方承担违约责任，补偿守约方承受或遭致的所有损失、责任、赔偿金或费用（包括但不限于合理的律师费、诉讼费、公证费等）。</p>
+        <p>2.若您违反本合同的规定未提供我们约定的服务，致使我们受到严重影响，我们有权书面催告您，要求您立即履行义务，如造成我们严重损失，我们有权向您追究赔偿我们由此受到的全部损失。</p>
+        <p>3.本合同关于违约状态下的救济方法（包括要求承担违约责任和解除合同等）的条款是累加的，可以选择适用或同时适用。</p>
+        <p>4.若任何一方违背了本合同中的任何规定，任何一方在向另两方出具书面违约提醒，要求违约方履行合同或采取必要的经济补救措施后的30个自然日，未收到违约方书面回应的，除了在法律责任承担或违约损害赔偿方面应由违约方承担外，守约方在对方根本违约情形下，有权单方书面通知解除本合同。</p>
+        <p>5.因金融机构、税务机关政策变动及其IT系统升级，以及政府行为或不可抗力因素导致本合同部分条款或全部条款无法履行的，遭受该行为的一方不承担违约责任。</p>
+        <p>6.本合同项下各方声明、承诺和保证：本合同任何一方已披露、签署和履行本合同所应当向另两方披露的全部信息，其内容真实、准确、无遗漏。
+        <strong>六、合同效力与争议解决</strong></p>
+        <p>1.如本合同的任何条款无论因何种原因完全或部分无效或不具有执行力，则应认为该条款与本合同相分割，并可被尽可能接近各方意图的，能够保留本合同要求的经济目的，有效的新条款所取代，而且在此情况下，本合同的其他条款仍然完全有效并具有约束力。</p>
+        <p>2.本合同履行过程中发生争议，可由各方协商解决，协商不成的各方一致同意提交我们所在地法院起诉。
+        此后无内容。</p>
+</div>
+</script>
+<script src="static/js/layui/layui.js"></script>
+<script src="static/js/layui/config.js"></script>
+<!-- <script src="static/js/qrcode.min.js"></script> -->
+
+<script>
+    layui.use(['laydate', 'layer', 'table', 'form', 'upload', 'element', 'laytpl', 'tableNav'], function () {
+        var $ = layui.jquery
+            , laydate = layui.laydate //日期
+            , layer = layui.layer //弹层
+            , table = layui.table // 表格
+            , form = layui.form //表单
+            , upload = layui.upload
+            , element = layui.element //元素操作
+            , laytpl = layui.laytpl
+            // , tableNav = layui.tableNav
+
+        
+        //日期范围
+        laydate.render({
+            elem: '#start_date'
+        });
+
+        //日期范围
+        laydate.render({
+            elem: '#end_date'
+        });
+
+
+        $('.J-btn-next').click(function(){
+            var radio_val = $('input[name="radio1"]:checked').val()
+            console.log(radio_val);
+        })
+
+        $('body').on('click','.layer-wrap .nav-con a',function(){
+            var self = $(this),
+                parents = self.parents('.side-bar')
+            parents.find('.nav-con a').removeClass('on')
+            self.addClass('on')
+        })
+
+        $('body').on('click','.J-change-type',function(){
+            // 弹出页面层
+            var html = $('#tpl-detail-con').html()
+            layer.open({
+                type: 1
+                , title: '选择任务类型'
+                , area: ['864px', '540px']
+                , shade: .3
+                , btn: ['确定','取消']
+                , btnAlign: 'c'
+                , content: html
+                // , btn: ["提交", '关闭'] //只是为了演示
+                , success: function(){
+                    form.render();
+                }
+                , yes: function (index, layero) {
+                }
+            });
+
+        })
+
+        $('.J-xieyi').click(function(){
+            layer.open({
+                type: 1
+                , title: '手机预订'
+                , area: ['1000px', '80%']
+                , shade: .3
+                , btnAlign: 'c'
+                , skin: 'layer-xieyi-con'
+                , content: $('#tpl-xieyi').html()
+                , btn: ['关闭'] //只是为了演示
+                , success: function(){
+                }
+                , yes: function (index, layero) {
+                    layer.closeAll()
+                }
+            });
+        })
+
+    })
+
+</script>
+</body>
+</html>

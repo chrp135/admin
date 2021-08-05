@@ -1,0 +1,193 @@
+
+.text-left{
+    text-align: left!important;
+}
+.text-center{
+    text-align: center!important;
+}
+.text-right{
+    text-align: right!important;
+}
+
+.hide{
+    display: none!important;
+}
+
+.c-333{
+    color: #333;
+}
+.c-555{
+    color: #555;
+}
+.c-999{
+    color: #999!important;
+}
+.c-orange{
+    color: #f77304;
+}
+.c-orange-lg{
+    color: #f55c03;
+}
+.c-yellow{
+    color: #ff0;
+}
+.c-yellow-lg{
+    color: #e7e706;
+}
+.c-blue{
+    color: #10a6e2;
+}
+.c-blue-lg{
+    color: #0c90db;
+}
+.c-green{
+    color: #00bf48;
+}
+.c-red{
+    color: #f00;
+}
+
+.bg-white{
+    background: #fff;
+}
+.bg-red{
+    color: #fff;
+    background: red;
+}
+.bg-orange{
+    color: #fff;
+    background: #f77304;
+}
+.bg-yellow{
+    color: #fff;
+    background: #ff0;
+}
+.bg-blue{
+    color: #fff;
+    background: #10a6e2;
+}
+.bg-green{
+    color: #fff;
+    background: #00bf48;
+}
+.bg-gray{
+    color: #fff;
+    background: #999;
+}
+.ellipsis1{
+    @include ellipsis2(1);
+}
+.ellipsis2{
+    @include ellipsis2(2);
+}
+
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.fixed{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+// 边距
+$sizes: (5:5px,10:10px,15:15px,20:20px,30:30px);
+@each $name, $size in $sizes {
+    .mg-#{$name}{
+        margin: $size
+    }
+    .mg-t-#{$name}{
+        margin-top: $size;
+    }
+    .mg-r-#{$name}{
+        margin-right: $size;
+    }
+    .mg-b-#{$name}{
+        margin-bottom: $size;
+    }
+    .mg-l-#{$name}{
+        margin-left: $size;
+    }
+    .pd-#{$name}{
+        padding: $size
+    }
+    .pd-t-#{$name}{
+        padding-top: $size;
+    }
+    .pd-r-#{$name}{
+        padding-right: $size;
+    }
+    .pd-b-#{$name}{
+        padding-bottom: $size;
+    }
+    .pd-l-#{$name}{
+        padding-left: $size;
+    }
+}
+
+
+// flex布局
+.flex-box {
+    display: flex;
+}
+.flex-item {
+    flex: 1;
+}
+.flex-2{
+    flex: 2!important;
+}
+.flex-3{
+    flex: 3!important;
+}
+
+
+.row{
+    flex-direction: row;
+}
+.column{
+    flex-direction: column;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.nowrap{
+    flex-wrap: nowrap;
+}
+
+// flex 水平对齐
+$flex-type: fs, c, fe, sb, sa;
+$flex-type2: fs, c, fe, b, s;
+@each $var in $flex-type {
+    .justify-#{$var}{
+        @include justify($var);
+    }
+}
+@each $var in $flex-type2 {
+    .align-content-#{$var} {
+        @include align-content($var);
+    }
+    .align-items-#{$var} {
+        @include align-items($var);
+    }
+    .align-self-#{$var} {
+        @include align-self($var);
+    }
+}
+
+.radius{
+    border-radius: 999px$ipt;
+}
+$radius-type: (xs:3px,sm:5px,md:10px,lg:15px);
+@each $item,$value in $radius-type {
+    .radius-#{$item}{
+        border-radius: #{$value};
+    }
+}
+
+

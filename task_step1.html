@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/js/layui/css/layui.css">
+    <link rel="stylesheet" href="static/css/admin.css">
+    <title>旅业盒子</title>
+</head>
+
+<body>
+    <div class="header-con flex-box">
+        <div class="logo">
+            <img src="static/img/logo.png">
+        </div>
+        <div class="lxs layui-nav">
+            <div class="lxs-name"><i class="iconfont icon-qiye"></i>厦门宝中旅行社</div>
+            <div class="layui-nav-item c-blue">
+                <a href="javascript:;" class="">切换</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">选项1</a></dd>
+                    <dd><a href="">选项2</a></dd>
+                    <dd><a href="">选项3</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="login-status layui-nav">
+            <div class="layui-nav-item">
+                <a href="javascript:;">欢迎您，陈明明</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">选项1</a></dd>
+                    <dd><a href="">选项2</a></dd>
+                    <dd><a href="">选项3</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="left-con">
+        <div class="scroll-con">
+                <dl>
+                    <dt>
+                        <a href="javascript:;">
+                            <i class="iconfont icon-shouye"></i>
+                            <cite>首页</cite>
+                        </a>
+                    </dt>
+                </dl>
+                <dl class="open">
+                    <dt href="javascript:;">
+                        <i class="iconfont icon-renwuguanli"></i>
+                        <cite>任务管理</cite>
+                        <i class="iconfont icon-angle-down"></i>
+                    </dt>
+                    <dd>
+                        <a href="" class="on">任务管理</a>
+                        <a href="">申请开票</a>
+                        <a href="">开票记录</a>
+                        <a href="">完税凭证</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt href="javascript:;">
+                        <i class="iconfont icon-lingkeguanli"></i>
+                        <cite>零客管理</cite>
+                        <i class="iconfont icon-angle-down"></i>
+                    </dt>
+                    <dd>
+                        <a href="">采购订单</a>
+                        <a href="">分销订单</a>
+                        <a href="">保险订单</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt href="javascript:;">
+                        <i class="iconfont icon-fuwushang"></i>
+                        <cite>服务商</cite>
+                        <i class="iconfont icon-angle-down"></i>
+                    </dt>
+                    <dd>
+                        <a href="">邀请分销商</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt href="javascript:;">
+                        <i class="iconfont icon-caiwu1"></i>
+                        <cite>财务</cite>
+                        <i class="iconfont icon-angle-down"></i>
+                    </dt>
+                    <dd>
+                        <a href="">资金管理</a>
+                        <a href="">提现申请</a>
+                        <a href="">发票管理</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt href="javascript:;">
+                        <i class="iconfont icon-shezhi"></i>
+                        <cite>设置</cite>
+                        <i class="iconfont icon-angle-down"></i>
+                    </dt>
+                    <dd>
+                        <a href="">常用信息</a>
+                        <a href="">账号信息</a>
+                        <a href="">修改密码</a>
+                    </dd>
+                </dl>
+        </div>
+        <a href="javascript:;" class="btn-side J-btn-side"><i class="iconfont icon-left"></i></a>
+    </div>
+    <div class="body-con layui-form">
+        <div class="body-wrap">
+            <div class="ndwz">
+                首页 > <a href="">任务管理</a>
+            </div>
+            <div class="ui-tag-tit">
+                <ul>
+                    <li><a href="javascript:;" class="on">发布任务</a></li>
+                </ul>
+            </div>
+            <div class="layui-card pd-20">
+                <div class="layui-card-body">
+                    <div class="step-con vh80">
+                        <ul>
+                            <li class="on current"><sub></sub><span>选择服务商</span></li>
+                            <li class=""><sub></sub><span>项目任务配置</span></li>
+                            <li><sub></sub><span>邀请零客</span></li>
+                            <li><sub></sub><span>确定发布</span></li>
+                        </ul>
+                    </div>
+                    <div class="ui-tag-tit mg-t-20">
+                        <ul>
+                            <li><a href="javascript:;" class="on">全部(3)</a></li>
+                            <li><a href="javascript:;" class="">生活服务产业(3)</a></li>
+                            <li><a href="javascript:;" class="">商品流通产业(2)</a></li>
+                            <li><a href="javascript:;" class="">金融产业(1)</a></li>
+                            <li><a href="javascript:;" class="">汽车后市场(1)</a></li>
+                            <li><a href="javascript:;" class="">盈利性医疗产业(1)</a></li>
+                            <li><a href="javascript:;" class="">房产营销产业(1)</a></li>
+                            <li><a href="javascript:;" class="">大基建产业(1)</a></li>
+                        </ul>
+                    </div>
+                    <div class="provider-list">
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio" name="radio1" value="1" title="选择" checked="">
+                                </label>
+                                <div class="pic">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="text-con">
+                                    <div class="title">
+                                        <b>家有活</b>
+                                        <span>行业类型：「生活服务产业共享用工平台」</span>
+                                    </div>
+                                    <div class="type">
+                                        <div class="dl">
+                                            <span>行业类型：</span>
+                                            <div class="layui-inline">「生活服务产业共享用工平台」</div>
+                                            <span class="mg-l-100">统一社会信用代码：</span>
+                                            <div class="layui-inline">91500108MA5U74P286</div>
+                                        </div>
+                                        <div class="dl">
+                                            <span>外包内容：</span>
+                                            <div class="layui-inline">为商业地产租赁及物业行业提供家政、经纪代理、软件技术服务及匹配的相关装卸搬运、会议会展、企业管理服务内容...&emsp;<a href="javascript:;" class="J-btn-more">详情<i class="iconfont icon-angle-right"></i></a></div>
+                                        </div>
+                                        <div class="dl">
+                                            <span>服务范围：</span>
+                                            <div class="layui-inline">
+                                                <div class="layui-inline ui-w120">
+                                                    <select name="" class="" lay-filter="test">
+                                                        <option value="1">管理类服务 </option>
+                                                        <option value="2">太平洋保险</option>
+                                                    </select>
+                                                </div>
+                                                <div class="layui-inline ui-w150">
+                                                    <select name="" class="" lay-filter="test">
+                                                        <option value="1">市场营销类服务</option>
+                                                        <option value="2">太平洋保险</option>
+                                                    </select>
+                                                </div>
+                                                <div class="layui-inline ui-w150">
+                                                    <select name="" class="" lay-filter="test">
+                                                        <option value="1">软件开发类企业</option>
+                                                        <option value="2">太平洋保险</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio" name="radio1" value="2" title="选择">
+                                </label>
+                                <div class="pic">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="text-con">
+                                    <div class="title">
+                                        <b>家有活</b>
+                                        <span>行业类型：「生活服务产业共享用工平台」</span>
+                                    </div>
+                                    <div class="type">
+                                        <div class="dl">
+                                            <span>行业类型：</span>
+                                            <div class="layui-inline">「生活服务产业共享用工平台」</div>
+                                            <span class="mg-l-100">统一社会信用代码：</span>
+                                            <div class="layui-inline">91500108MA5U74P286</div>
+                                        </div>
+                                        <div class="dl">
+                                            <span>外包内容：</span>
+                                            <div class="layui-inline">为商业地产租赁及物业行业提供家政、经纪代理、软件技术服务及匹配的相关装卸搬运、会议会展、企业管理服务内容...&emsp;<a href="javascript:;" class="J-btn-more">详情<i class="iconfont icon-angle-right"></i></a></div>
+                                        </div>
+                                        <div class="dl">
+                                            <span>服务范围：</span>
+                                            <div class="layui-inline">
+                                                <div class="layui-inline ui-w120">
+                                                    <select name="" class="" lay-filter="test">
+                                                        <option value="1">管理类服务 </option>
+                                                        <option value="2">太平洋保险</option>
+                                                    </select>
+                                                </div>
+                                                <div class="layui-inline ui-w150">
+                                                    <select name="" class="" lay-filter="test">
+                                                        <option value="1">市场营销类服务</option>
+                                                        <option value="2">太平洋保险</option>
+                                                    </select>
+                                                </div>
+                                                <div class="layui-inline ui-w150">
+                                                    <select name="" class="" lay-filter="test">
+                                                        <option value="1">软件开发类企业</option>
+                                                        <option value="2">太平洋保险</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sticky-bottom">
+                    <a href="javascript:;" class="layui-btn btn-lg plain">取消</a>
+                    <a href="javascript:;" class="layui-btn btn-lg btn-normal J-btn-next">下一步</a>
+                </div>
+            </div>
+            
+            <!-- <div class="footer-btn">
+                <a href="" class="layui-btn btn-lg plain">取消</a>
+                <a href="" class="layui-btn btn-lg btn-normal">确认完成</a>
+            </div> -->
+        </div>
+        <!-- <div class="footer-con">
+            &copy; Copyright 2020 多多优采&emsp;|&emsp;技术支持：<a>厦门市旅动力信息有限公司</a>
+        </div> -->
+    </div>
+
+<script type="text/html" id="tpl-detail-con">
+    <div class="txt">
+        <p>为商业地产租赁及物业行业提供家政、经纪代理、软件技术服务及匹配的相关装卸搬运、会议会展、企业管理服务内容</p>
+        <p>为商业地产租赁及物业行业提供家政、经纪代理、软件技术服务及匹配的相关装卸搬运、会议会展、企业管理服务内容</p>
+        <p>为商业地产租赁及物业行业提供家政、经纪代理、软件技术服务及匹配的相关装卸搬运、会议会展、企业管理服务内容</p>
+    </div>
+</script>
+<script src="static/js/layui/layui.js"></script>
+<script src="static/js/layui/config.js"></script>
+<!-- <script src="static/js/qrcode.min.js"></script> -->
+
+<script>
+    layui.use(['laydate', 'layer', 'table', 'form', 'upload', 'element', 'laytpl', 'tableNav'], function () {
+        var $ = layui.jquery
+            , laydate = layui.laydate //日期
+            , layer = layui.layer //弹层
+            , table = layui.table // 表格
+            , form = layui.form //表单
+            , upload = layui.upload
+            , element = layui.element //元素操作
+            , laytpl = layui.laytpl
+            // , tableNav = layui.tableNav
+
+        $('.J-btn-next').click(function(){
+            var radio_val = $('input[name="radio1"]:checked').val()
+            console.log(radio_val);
+        })
+
+        $('body').on('click','.J-btn-more',function(){
+            // 弹出页面层
+            var html = $('#tpl-detail-con').html()
+            layer.open({
+                type: 1
+                , title: '外包内容'
+                , area: ['600px', '300px']
+                , shade: .3
+                , btnAlign: 'c'
+                , content: html
+                // , btn: ["提交", '关闭'] //只是为了演示
+                , success: function(){
+                    
+                }
+                , yes: function (index, layero) {
+                }
+            });
+
+        })
+
+    })
+
+</script>
+</body>
+</html>

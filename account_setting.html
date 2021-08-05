@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/js/layui/css/layui.css">
+    <link rel="stylesheet" href="static/css/admin.css">
+    <title>旅业盒子</title>
+</head>
+
+<body>
+    <div class="header-con flex-box">
+        <div class="logo">
+            <img src="static/img/logo.png">
+        </div>
+        <div class="lxs layui-nav">
+            <div class="lxs-name"><i class="iconfont icon-qiye"></i>厦门宝中旅行社</div>
+            <div class="layui-nav-item c-blue">
+                <a href="javascript:;" class="">切换</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">选项1</a></dd>
+                    <dd><a href="">选项2</a></dd>
+                    <dd><a href="">选项3</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="login-status layui-nav">
+            <div class="layui-nav-item">
+                <a href="javascript:;">欢迎您，陈明明</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">选项1</a></dd>
+                    <dd><a href="">选项2</a></dd>
+                    <dd><a href="">选项3</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="left-con">
+        <div class="scroll-con">
+            <dl>
+                <dt>
+                    <a href="javascript:;">
+                        <i class="iconfont icon-shouye"></i>
+                        <cite>首页</cite>
+                    </a>
+                </dt>
+            </dl>
+            <dl class="open">
+                <dt href="javascript:;">
+                    <i class="iconfont icon-renwuguanli"></i>
+                    <cite>任务管理</cite>
+                    <i class="iconfont icon-angle-down"></i>
+                </dt>
+                <dd>
+                    <a href="" class="on">任务管理</a>
+                    <a href="">申请开票</a>
+                    <a href="">开票记录</a>
+                    <a href="">完税凭证</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt href="javascript:;">
+                    <i class="iconfont icon-lingkeguanli"></i>
+                    <cite>零客管理</cite>
+                    <i class="iconfont icon-angle-down"></i>
+                </dt>
+                <dd>
+                    <a href="">采购订单</a>
+                    <a href="">分销订单</a>
+                    <a href="">保险订单</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt href="javascript:;">
+                    <i class="iconfont icon-fuwushang"></i>
+                    <cite>服务商</cite>
+                    <i class="iconfont icon-angle-down"></i>
+                </dt>
+                <dd>
+                    <a href="">邀请分销商</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt href="javascript:;">
+                    <i class="iconfont icon-caiwu1"></i>
+                    <cite>财务</cite>
+                    <i class="iconfont icon-angle-down"></i>
+                </dt>
+                <dd>
+                    <a href="">资金管理</a>
+                    <a href="">提现申请</a>
+                    <a href="">发票管理</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt href="javascript:;">
+                    <i class="iconfont icon-shezhi"></i>
+                    <cite>设置</cite>
+                    <i class="iconfont icon-angle-down"></i>
+                </dt>
+                <dd>
+                    <a href="">常用信息</a>
+                    <a href="">账号信息</a>
+                    <a href="">修改密码</a>
+                </dd>
+            </dl>
+        </div>
+        <a href="javascript:;" class="btn-side J-btn-side"><i class="iconfont icon-left"></i></a>
+    </div>
+    <div class="body-con">
+        <div class="body-wrap">
+            <div class="ndwz">
+                <a href="">首页</a> > <a href="">任务管理</a> > <span>任务详情</span>
+            </div>
+            <div class="ui-tag-tit">
+                <ul>
+                    <li><a href="javascript:;" class="on">账户详情</a></li>
+                </ul>
+            </div>
+            <div class="layui-card pd-20 layui-form">
+                <div class="ui-tit">
+                    <b>账号信息</b>
+                </div>
+                <div class="layui-card-body">
+                    <table class="table-flex table-form mg-t-20 th-w-120">
+                        <tbody>
+                            <tr>
+                                <th><sup>*</sup>姓名：</th>
+                                <td>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="" value="" placeholder="" class="layui-input ui-w300">
+                                    </div>
+                                </td>
+                                <th><sup>*</sup>用户：</th>
+                                <td>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="" value="" placeholder="" class="layui-input ui-w300">
+                                    </div>
+                                </td>
+                                <th></th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th><sup>*</sup>手机号：</th>
+                                <td>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="" value="" placeholder="" class="layui-input ui-w300">
+                                    </div>
+                                </td>
+                                <th><sup>*</sup>登录密码：</th>
+                                <td>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="" value="" placeholder="" class="layui-input ui-w300">
+                                    </div>
+                                </td>
+                                <th></th>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="ui-tit mg-t-20">
+                    <b>账号信息</b>
+                </div>
+                <div class="layui-row company-checkbox">
+                    <input type="checkbox" name="company" class="company" lay-filter="company" value="1" lay-skin="primary" title="厦门宝中国际旅行社有限公司" checked="checked" disabled>
+                    <input type="checkbox" name="company" class="company" lay-filter="company" value="2" lay-skin="primary" title="漳州际旅行社有限公司">
+                    <input type="checkbox" name="company" class="company" lay-filter="company" value="3" lay-skin="primary" title="龙旅信息科">
+                </div>
+
+                <div class="ui-tit mg-t-20">
+                    <b>账号权限</b>
+                </div>
+
+                <div class="layui-row company-tab">
+                    <a href="javascript:;" class="layui-btn plain">厦门宝中国际旅行社有限公司</a>
+                </div>
+
+                <div id="test12" class="demo-tree-more"></div>
+                <div class="layui-btn-container mg-t-20">
+                    <button type="button" class="layui-btn layui-btn-sm" lay-demo="getChecked">获取选中节点数据</button>
+                    <button type="button" class="layui-btn layui-btn-sm" lay-demo="setChecked">勾选指定节点</button>
+                    <button type="button" class="layui-btn layui-btn-sm" lay-demo="reload">重载实例</button>
+                </div>
+
+                <div class="sticky-bottom mg-t-20">
+                    <a href="javascript:;" class="layui-btn btn-lg plain btn-grey">返回列表</a>
+                    <a href="javascript:;" class="layui-btn btn-lg J-btn-next">保存</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/layui/layui.js"></script>
+    <script src="static/js/layui/config.js"></script>
+    <!-- <script src="static/js/qrcode.min.js"></script> -->
+
+    <script>
+        layui.use(['laydate', 'layer', 'table', 'form', 'tree', 'upload', 'element', 'laytpl', 'util'], function () {
+            var $ = layui.jquery
+                , laydate = layui.laydate //日期
+                , layer = layui.layer //弹层
+                , table = layui.table // 表格
+                , form = layui.form //表单
+                , tree = layui.tree
+                , upload = layui.upload
+                , element = layui.element //元素操作
+                , laytpl = layui.laytpl
+                , util = layui.util
+
+            form.on('checkbox(company)', function(data){
+                // console.log(data.elem.title,data.elem.checked);
+                var title = data.elem.title,
+                    checked = data.elem.checked
+                
+                var checked_len = $(".company:checked").length
+                
+                if(checked_len == 1){
+                    $(".company:checked").attr('disabled','disabled')
+                    form.render()
+                    $('.company-tab a').removeClass('btn-grey')
+                }else{
+                    $(".company:checked").removeAttr('disabled')
+                    form.render()
+                }
+
+                $('.company-tab a').remove()
+                $(".company:checked").each(function(i,n){
+                    val = $(this).attr('title')
+                    if(i == 0){
+                        $('.company-tab').append('<a href="javascript:;" class="layui-btn plain">'+val+'</a>')
+                    }else{
+                        $('.company-tab').append('<a href="javascript:;" class="layui-btn plain btn-grey">'+val+'</a>')
+                    }
+                })
+            })
+
+            $('body').on('click','.company-tab a',function(){
+                var self = $(this)
+                if(!self.addClass('btn-grey')){
+                    return false
+                }
+                if(self.hasClass('btn-grey')){
+                    self.removeClass('btn-grey').siblings('a').addClass('btn-grey')
+                }else{
+                    self.addClass('btn-grey')
+                }
+            })
+
+            data = [{
+                title: '一级1'
+                , id: 1
+                , field: 'name1'
+                , checked: true
+                , spread: true
+                , children: [{
+                    title: '二级1-1 可允许跳转'
+                    , id: 3
+                    , field: 'name11'
+                    , href: 'https://www.layui.com/'
+                    , children: [{
+                        title: '三级1-1-3'
+                        , id: 23
+                        , field: ''
+                        , children: [{
+                            title: '四级1-1-3-1'
+                            , id: 24
+                            , field: ''
+                            , children: [{
+                                title: '五级1-1-3-1-1'
+                                , id: 30
+                                , field: ''
+                            }, {
+                                title: '五级1-1-3-1-2'
+                                , id: 31
+                                , field: ''
+                            }]
+                        }]
+                    }, {
+                        title: '三级1-1-1'
+                        , id: 7
+                        , field: ''
+                        , children: [{
+                            title: '四级1-1-1-1 可允许跳转'
+                            , id: 15
+                            , field: ''
+                            , href: 'https://www.layui.com/doc/'
+                        }]
+                    }, {
+                        title: '三级1-1-2'
+                        , id: 8
+                        , field: ''
+                        , children: [{
+                            title: '四级1-1-2-1'
+                            , id: 32
+                            , field: ''
+                        }]
+                    }]
+                }, {
+                    title: '二级1-2'
+                    , id: 4
+                    , spread: true
+                    , children: [{
+                        title: '三级1-2-1'
+                        , id: 9
+                        , field: ''
+                        , disabled: true
+                    }, {
+                        title: '三级1-2-2'
+                        , id: 10
+                        , field: ''
+                    }]
+                }, {
+                    title: '二级1-3'
+                    , id: 20
+                    , field: ''
+                    , children: [{
+                        title: '三级1-3-1'
+                        , id: 21
+                        , field: ''
+                    }, {
+                        title: '三级1-3-2'
+                        , id: 22
+                        , field: ''
+                    }]
+                }]
+            }, {
+                title: '一级2'
+                , id: 2
+                , field: ''
+                , spread: true
+                , children: [{
+                    title: '二级2-1'
+                    , id: 5
+                    , field: ''
+                    , spread: true
+                    , children: [{
+                        title: '三级2-1-1'
+                        , id: 11
+                        , field: ''
+                    }, {
+                        title: '三级2-1-2'
+                        , id: 12
+                        , field: ''
+                    }]
+                }, {
+                    title: '二级2-2'
+                    , id: 6
+                    , field: ''
+                    , children: [{
+                        title: '三级2-2-1'
+                        , id: 13
+                        , field: ''
+                    }, {
+                        title: '三级2-2-2'
+                        , id: 14
+                        , field: ''
+                        , disabled: true
+                    }]
+                }]
+            }, {
+                title: '一级3'
+                , id: 16
+                , field: ''
+                , children: [{
+                    title: '二级3-1'
+                    , id: 17
+                    , field: ''
+                    , fixed: true
+                    , children: [{
+                        title: '三级3-1-1'
+                        , id: 18
+                        , field: ''
+                    }, {
+                        title: '三级3-1-2'
+                        , id: 19
+                        , field: ''
+                    }]
+                }, {
+                    title: '二级3-2'
+                    , id: 27
+                    , field: ''
+                    , children: [{
+                        title: '三级3-2-1'
+                        , id: 28
+                        , field: ''
+                    }, {
+                        title: '三级3-2-2'
+                        , id: 29
+                        , field: ''
+                    }]
+                }]
+            }]
+            //基本演示
+            tree.render({
+                elem: '#test12'
+                , data: data
+                , showCheckbox: true  //是否显示复选框
+                , id: 'demoId1'
+                , isJump: true //是否允许点击节点时弹出新窗口跳转
+                , click: function (obj) {
+                    var data = obj.data;  //获取当前点击的节点数据
+                    layer.msg('状态：' + obj.state + '<br>节点数据：' + JSON.stringify(data));
+                }
+            });
+
+            //按钮事件
+            util.event('lay-demo', {
+                getChecked: function(othis){
+                var checkedData = tree.getChecked('demoId1'); //获取选中节点的数据
+                
+                layer.alert(JSON.stringify(checkedData), {shade:0});
+                console.log(checkedData);
+                }
+                ,setChecked: function(){
+                tree.setChecked('demoId1', [12, 16]); //勾选指定节点
+                }
+                ,reload: function(){
+                //重载实例
+                tree.reload('demoId1', {
+                    
+                });
+                
+                }
+            });
+
+        })
+
+    </script>
+</body>
+
+</html>

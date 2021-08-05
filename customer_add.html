@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/js/layui/css/layui.css">
+    <link rel="stylesheet" href="static/css/admin.css">
+    <title>旅业盒子</title>
+</head>
+
+<body>
+    <div class="header-con flex-box">
+        <div class="logo">
+            <img src="static/img/logo.png">
+        </div>
+        <div class="lxs layui-nav">
+            <div class="lxs-name"><i class="iconfont icon-qiye"></i>厦门宝中旅行社</div>
+            <div class="layui-nav-item c-blue">
+                <a href="javascript:;" class="">切换</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">选项1</a></dd>
+                    <dd><a href="">选项2</a></dd>
+                    <dd><a href="">选项3</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="login-status layui-nav">
+            <div class="layui-nav-item">
+                <a href="javascript:;">欢迎您，陈明明</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">选项1</a></dd>
+                    <dd><a href="">选项2</a></dd>
+                    <dd><a href="">选项3</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="left-con">
+        <div class="scroll-con">
+            <dl>
+                <dt>
+                    <a href="javascript:;">
+                        <i class="iconfont icon-shouye"></i>
+                        <cite>首页</cite>
+                    </a>
+                </dt>
+            </dl>
+            <dl class="open">
+                <dt href="javascript:;">
+                    <i class="iconfont icon-renwuguanli"></i>
+                    <cite>任务管理</cite>
+                    <i class="iconfont icon-angle-down"></i>
+                </dt>
+                <dd>
+                    <a href="" class="on">任务管理</a>
+                    <a href="">申请开票</a>
+                    <a href="">开票记录</a>
+                    <a href="">完税凭证</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt href="javascript:;">
+                    <i class="iconfont icon-lingkeguanli"></i>
+                    <cite>零客管理</cite>
+                    <i class="iconfont icon-angle-down"></i>
+                </dt>
+                <dd>
+                    <a href="">采购订单</a>
+                    <a href="">分销订单</a>
+                    <a href="">保险订单</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt href="javascript:;">
+                    <i class="iconfont icon-fuwushang"></i>
+                    <cite>服务商</cite>
+                    <i class="iconfont icon-angle-down"></i>
+                </dt>
+                <dd>
+                    <a href="">邀请分销商</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt href="javascript:;">
+                    <i class="iconfont icon-caiwu1"></i>
+                    <cite>财务</cite>
+                    <i class="iconfont icon-angle-down"></i>
+                </dt>
+                <dd>
+                    <a href="">资金管理</a>
+                    <a href="">提现申请</a>
+                    <a href="">发票管理</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt href="javascript:;">
+                    <i class="iconfont icon-shezhi"></i>
+                    <cite>设置</cite>
+                    <i class="iconfont icon-angle-down"></i>
+                </dt>
+                <dd>
+                    <a href="">常用信息</a>
+                    <a href="">账号信息</a>
+                    <a href="">修改密码</a>
+                </dd>
+            </dl>
+        </div>
+        <a href="javascript:;" class="btn-side J-btn-side"><i class="iconfont icon-left"></i></a>
+    </div>
+    <div class="body-con layui-form">
+        <div class="body-wrap">
+            <div class="ndwz">
+                首页 > <a href="">任务管理</a>
+            </div>
+            <div class="ui-tag-tit">
+                <ul>
+                    <li><a href="javascript:;" class="on">添加零客</a></li>
+                </ul>
+            </div>
+            <div class="layui-card pd-20">
+                <div class="layui-card-body">
+                    <div class="ui-tit">
+                        <b>基本信息</b>
+                    </div>
+                    <table class="table-flex table-form mg-t-20 th-w-120">
+                        <tbody>
+                            <tr>
+                                <th><sup>*</sup>联系人：</th>
+                                <td>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="" value="3501265987744" placeholder=""
+                                            class="layui-input ui-w300">
+                                    </div>
+                                </td>
+                                <th>证件号：</th>
+                                <td>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="" value="3501265987744" placeholder=""
+                                            class="layui-input ui-w300">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><sup>*</sup>手机号：</th>
+                                <td>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="" value="3501265987744" placeholder=""
+                                            class="layui-input ui-w300">
+                                    </div>
+                                </td>
+                                <th>职位：</th>
+                                <td>
+                                    <div class="layui-input-inline">
+                                        <input type="text" name="" value="3501265987744" placeholder=""
+                                            class="layui-input ui-w300">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>证件正面：</th>
+                                <td>
+                                    <div class="layui-upload">
+                                        <button type="button" class="layui-btn plain" id="test1">上传图片</button>
+                                        <i class="iconfont icon-zhushi J-why-c"></i>
+                                        <div class="layui-hide">
+                                            <p>可退票，有退票手续费，详情咨询客服021-52830800可退票，有退票手续费，详情咨询客服021-52830800"</p>
+                                            <p>可退票，有退票手续费，详情咨询客服021-52830800可退票，有退票手续费，详情咨询客服021-52830800"</p>
+                                            <p>可退票，有退票手续费，详情咨询客服021-52830800可退票，有退票手续费，详情咨询客服021-52830800"</p>
+                                        </div>
+                                        <input class="layui-upload-file" type="file" accept="" name="file"
+                                            lay-verify="required" lay-reqText="">
+                                        <ul class="layui-upload-list" id="upload-list1">
+                                        </ul>
+                                    </div>
+                                </td>
+                                <th>证件反面：</th>
+                                <td>
+                                    <div class="layui-upload">
+                                        <button type="button" class="layui-btn plain" id="test2">上传图片</button>
+                                        <i class="iconfont icon-zhushi J-why-c"></i>
+                                        <div class="layui-hide">
+                                            <p>可退票，有退票手续费，详情咨询客服021-52830800可退票，有退票手续费，详情咨询客服021-52830800"</p>
+                                            <p>可退票，有退票手续费，详情咨询客服021-52830800可退票，有退票手续费，详情咨询客服021-52830800"</p>
+                                            <p>可退票，有退票手续费，详情咨询客服021-52830800可退票，有退票手续费，详情咨询客服021-52830800"</p>
+                                        </div>
+                                        <input class="layui-upload-file" type="file" accept="" name="file"
+                                            lay-verify="required" lay-reqText="">
+                                        <ul class="layui-upload-list" id="upload-list2">
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <div class="btn-con">
+                                        <a href="javascript:;" class="layui-btn" lay-submit
+                                            lay-filter="formSubmit">确定保存</a>
+                                        <a href="javascript:;" class="layui-btn plain" lay-filter="">取消</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- <div class="footer-btn">
+                <a href="" class="layui-btn btn-lg plain">取消</a>
+                <a href="" class="layui-btn btn-lg btn-normal">确认完成</a>
+            </div> -->
+        </div>
+        <!-- <div class="footer-con">
+            &copy; Copyright 2020 多多优采&emsp;|&emsp;技术支持：<a>厦门市旅动力信息有限公司</a>
+        </div> -->
+    </div>
+
+    <script type="text/html" id="tpl-detail-con">
+    <div class="txt">
+        <p>为商业地产租赁及物业行业提供家政、经纪代理、软件技术服务及匹配的相关装卸搬运、会议会展、企业管理服务内容</p>
+        <p>为商业地产租赁及物业行业提供家政、经纪代理、软件技术服务及匹配的相关装卸搬运、会议会展、企业管理服务内容</p>
+        <p>为商业地产租赁及物业行业提供家政、经纪代理、软件技术服务及匹配的相关装卸搬运、会议会展、企业管理服务内容</p>
+    </div>
+</script>
+    <script src="static/js/layui/layui.js"></script>
+    <script src="static/js/layui/config.js"></script>
+    <!-- <script src="static/js/qrcode.min.js"></script> -->
+
+    <script>
+        layui.use(['laydate', 'layer', 'table', 'form', 'upload', 'element', 'laytpl', 'tableNav'], function () {
+            var $ = layui.jquery
+                , laydate = layui.laydate //日期
+                , layer = layui.layer //弹层
+                , table = layui.table // 表格
+                , form = layui.form //表单
+                , upload = layui.upload
+                , element = layui.element //元素操作
+                , laytpl = layui.laytpl
+            // , tableNav = layui.tableNav
+
+            // 上传多图
+            upload.render({
+                elem: '#test1'
+                , url: '/api/upload/'
+                , auto: false //选择文件后不自动上传
+                , multiple: true
+                , bindAction: '#testListAction' //指向一个按钮触发上传
+                , choose: function (obj) {
+                    //将每次选择的文件追加到文件队列
+                    var files = obj.pushFile();
+                    //预读本地文件，如果是多文件，则会遍历。(不支持ie8/9)
+                    obj.preview(function (index, file, result) {
+                        $('#upload-list1').append('<li><i class="iconfont icon-guanbi2fill"></i><img src="' + result + '" alt="' + file.name + '" class="layui-upload-img"></li>')
+                        // console.log(index); //得到文件索引
+                        // console.log(file); //得到文件对象
+                        // console.log(result); //得到文件base64编码，比如图片
+                        //obj.resetFile(index, file, '123.jpg'); //重命名文件名，layui 2.3.0 开始新增
+                        //这里还可以做一些 append 文件列表 DOM 的操作
+                        obj.upload(index, file); //对上传失败的单个文件重新上传，一般在某个事件中使用
+                        //delete files[index]; //删除列表中对应的文件，一般在某个事件中使用
+                        $('body').on('click', '#upload-list1 i', function () {
+                            var self = $(this),
+                                li = self.parents('li')
+                            var i = li.index()
+                            console.log(i);
+                            li.remove()
+                            delete files[i];
+                        })
+                    });
+                    console.log(files);
+                }, done: function () {
+
+                }
+            });
+
+
+            // 上传多图
+            upload.render({
+                elem: '#test2'
+                , url: '/api/upload/'
+                , auto: false //选择文件后不自动上传
+                , multiple: true
+                , bindAction: '#testListAction' //指向一个按钮触发上传
+                , choose: function (obj) {
+                    //将每次选择的文件追加到文件队列
+                    var files = obj.pushFile();
+                    //预读本地文件，如果是多文件，则会遍历。(不支持ie8/9)
+                    obj.preview(function (index, file, result) {
+                        $('#upload-list2').append('<li><i class="iconfont icon-guanbi2fill"></i><img src="' + result + '" alt="' + file.name + '" class="layui-upload-img"></li>')
+                        // console.log(index); //得到文件索引
+                        // console.log(file); //得到文件对象
+                        // console.log(result); //得到文件base64编码，比如图片
+                        //obj.resetFile(index, file, '123.jpg'); //重命名文件名，layui 2.3.0 开始新增
+                        //这里还可以做一些 append 文件列表 DOM 的操作
+                        obj.upload(index, file); //对上传失败的单个文件重新上传，一般在某个事件中使用
+                        //delete files[index]; //删除列表中对应的文件，一般在某个事件中使用
+                        $('body').on('click', '#upload-list2 i', function () {
+                            var self = $(this),
+                                li = self.parents('li')
+                            var i = li.index()
+                            console.log(i);
+                            li.remove()
+                            delete files[i];
+                        })
+                    });
+                    console.log(files);
+                }, done: function () {
+
+                }
+            });
+
+
+
+        })
+
+    </script>
+</body>
+
+</html>

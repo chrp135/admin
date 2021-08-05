@@ -1,0 +1,581 @@
+
+// 首页样式
+.home-con {
+    padding: 20px;
+    background: #fff;
+    .nav-data{
+        height: 138px;
+        .flex-item{
+            position: relative;
+            margin: 0 10px;
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+            overflow: hidden;
+            &:first-child{
+                margin-left: 0;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+            &::after{
+                position: absolute;
+                bottom: -25px;
+                right: -10px;
+                font-family: 'iconfont';
+                font-size: 90px;
+                color: #fff;
+                opacity: .2;
+            }
+            &:nth-child(1){
+                background-image: linear-gradient(to right, #fdd302, #feac02);
+                &::after{
+                    content: '\e7b1';
+                }
+            }
+            &:nth-child(2){
+                background-image: linear-gradient(to right, #0ae68c, #4fcba7);
+                &::after{
+                    content: '\e7b0';
+                }
+            }
+            &:nth-child(3){
+                background-image: linear-gradient(to right, #0abcfc, #4589ff);
+                &::after{
+                    content: '\e7af';
+                }
+            }
+            &:nth-child(4){
+                background-image: linear-gradient(to right, #fd6284, #fd1954);
+                &::after{
+                    content: '\e7ab';
+                }
+            }
+            &:nth-child(5){
+                background-image: linear-gradient(to right, #c473fc, #5f01f8);
+                &::after{
+                    content: '\e7ad';
+                }
+            }
+            span{
+                font-size: 16px;
+            }
+            em{
+                padding: 5px 0;
+                font-size: 20px;
+                font-weight: bold;
+                b{
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+    .nav-con{
+        margin-top: 20px;
+        padding: 20px;
+        background: #f8faff;
+        .flex-item{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 15px 0;
+            i{
+                font-size: 26px;
+                color: #666;
+            }
+            span{
+                margin-top: 15px;
+                font-size: 14px;
+                color: #333;
+            }
+            &:hover{
+                i,span{
+                    color: $blue ;
+                }
+            }
+        }
+    }
+}
+
+
+// 任务发布
+.provider-list{
+    li{
+        display: flex;
+        align-items: center;
+        padding: 15px 0;
+        border-top: 1px solid #e0e0e0;
+        &:first-child{
+            border-top: 0;
+        }
+        label{
+            width: 100px;
+            text-align: center;
+            .layui-form-radio div{
+                color: #555;
+                font-size: 14px;
+            }
+        }
+        .pic{
+            padding: 0 20px;
+            img{
+                width: 80px;
+                height: 80px;
+                border: 1px solid #ddd;
+            }
+        }
+        .text-con{
+            flex: 1;
+            .title{
+                b{
+                    font-size: 16px;
+                    color: #555;
+                }
+                span{
+                    display: inline-block;
+                    padding: 0 5px;
+                    margin-left: 10px;
+                    line-height: 20px;
+                    color: #e8a951;
+                    border: 1px solid #e8a951;
+                    background: #fdf6ec;
+                }
+            }
+            .type{
+                margin-top: 5px;
+                .dl{
+                    line-height: 30px;
+                    span{
+                        color: #999;
+                        &.mg-l-100{
+                            margin-left: 100px;
+                        }
+                    }
+                    .layui-inline{
+                        font-size: 14px;
+                        color: #555;
+                    }
+                    .layui-form-select{
+                        margin-top: -4px;
+                        .layui-input{
+                            height: 24px;
+                            line-height: 24px;
+                            padding-right: 20px;
+                            color: $blue ;
+                            border-color: $blue ;
+                            &:hover{
+                                border-color: $blue ;
+                            }
+                        }
+                        .layui-edge{
+                            top: 0;
+                            right: 4px;
+                            width: auto;
+                            height: auto;
+                            border: 0;
+                            color: $blue ;
+                            font-style: normal;
+                            font-family: 'iconfont';
+                            &::after{
+                                content: '\e60e';
+                            }
+                        }
+                        dl{
+                            top: 26px;
+                            min-height: 58px;
+                            dd{
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                    .layui-form-selected .layui-edge{
+                        margin: -3px 0 0;
+                    }
+                    a{
+                        color: $blue ;
+                    }
+                }
+            }
+        }
+        &:hover{
+            background: $blue Rgb;
+        }
+    }
+}
+
+// 申请开票
+.billing-con{
+    .billing{
+        width: 100%;
+        border: 1px solid #e19b9b;
+        background: #fffbfb;
+        box-sizing: border-box;
+        margin-top: 15px;
+        color: #555;
+        &:first-child{
+            margin-top: 0;
+        }
+        thead{
+            td{
+                padding: 10px;
+                border-bottom: 1px solid #e19b9b;
+            }
+        }
+        tbody{
+            th{
+                padding: 10px;
+                color: #d66e6e;
+                border: 1px solid #e19b9b;
+                vertical-align: top;
+                font-weight: normal;
+                span{
+                    color: #555;
+                }
+            }
+            td{
+                padding: 10px;
+                border: 1px solid #e19b9b;
+                color: #555;
+                em{
+                    color: #d66e6e;
+                }
+                .layui-textarea{
+                    border-color: #e19b9b;
+                }
+            }
+        }
+    }
+    .add-billing{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        margin: 15px 0;
+        color: $blue ;
+        border: 1px dashed $blue ;
+        cursor: pointer;
+    }
+}
+.billing-view{
+    .tit{
+        padding-bottom: 20px;
+        text-align: center;
+        color: #999;
+    }
+    .layui-carousel[lay-indicator=outside] .layui-carousel-ind{
+        top: 30px;
+    }
+    .layui-carousel[lay-indicator=outside]{
+        margin-bottom: 0;
+    }
+    .carousel-item{
+        height: 485px;
+        .plain,.special{
+            width: 848px;
+            height: 485px;
+            table{
+                width: 800px;
+                margin: 0 auto;
+                margin-top: 230px;
+                font-size: 12px;
+                tr{
+                    th{
+                        padding-bottom: 56px;
+                        font-weight: normal;
+                        color: #555;
+                    }
+                    td{
+                        line-height: 30px;
+                        color: #555;
+                        &.pd-l-20{
+                            padding-left: 20px;
+                        }
+                        &.pd-l-80{
+                            padding-left: 80px;
+                        }
+                    }
+                }
+            }
+        }
+        .plain{
+            background: url(../img/billing-bg.png) no-repeat;
+        }
+        .special{
+            background: url(../img/billing-bg2.png) no-repeat;
+        }
+    }
+}
+
+// 物流进度
+.logistics-con{
+    padding: 30px 50px;
+    dl{
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        &:first-child{
+            dt{
+                span{
+                    color: #333;
+                }
+            }
+            dt::before{
+                content: '\e672';
+                position: absolute;
+                top: -1px;
+                right: -11px;
+                font-family: 'iconfont';
+                font-size: 20px;
+                color: $blue ;
+                z-index: 2;
+            }
+            dt::after{
+                display: none;
+            }
+            dd{
+                color: #333;
+            }
+        }
+        &:last-child{
+            dt{
+                border: 0;
+            }
+        }
+    }
+    dt{
+        position: relative;
+        width: 100px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        text-align: right;
+        border-right: 2px solid #e0e0e0;
+        color: #999;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 5px;
+            right: -5px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #e0e0e0;
+        }
+    }
+    dd{
+        flex: 1;
+        padding: 0 0 30px 20px;
+        color: #999;
+    }
+}
+
+.task-pay{
+    .pay-nav{
+        margin-top: 20px;
+        a{
+            display: inline-block;
+            position: relative;
+            min-width: 200px;
+            padding: 12px;
+            line-height: 34px;
+            font-size: 16px;
+            border: 1px solid $blue ;
+            border-radius: 2px;
+            background: #f9fbff;
+            i{
+                display: inline-block;
+                width: 34px;
+                height: 34px;
+                margin-right: 10px;
+                color: #fff;
+                text-align: center;
+                border-radius: 2px;
+                background: #ffa929;
+                font-size: 24px;
+            }
+            &.on{
+                &::after{
+                    content: '\e648';
+                    position: absolute;
+                    bottom: -6px;
+                    right: 0;
+                    font-size: 24px;
+                    font-family: 'iconfont';
+                    color: $blue ;
+                }
+            }
+        }
+    }
+    .text-con{
+        margin-top: 10px;
+        padding: 10px 20px;
+        line-height: 30px;
+        font-size: 14px;
+        background: #fdfdfe;
+        strong{
+            display: block;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+        }
+        p{
+            color: #999999;
+            em{
+                color: #e8a951;
+            }
+            b{
+                color: #333;
+            }
+        }
+        .tip{
+            color: #555;
+        }
+    }
+}
+
+.company-checkbox{
+    padding: 20px 0;
+    span{
+        font-size: 14px;
+    }
+}
+
+.company-tab{
+    padding: 20px 0;
+    a{
+        font-size: 12px;
+    }
+}
+
+
+.upload-item-con{
+    .upload-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 130px;
+        padding: 0 20px;
+        text-align: center;
+        cursor: pointer;
+        box-sizing: border-box;
+        background: #f9fbff;
+        i{
+            width: 40px;
+            height: 40px;
+            line-height: 42px;
+            font-size: 24px;
+            color: #fff;
+            border-radius: 50%;
+            background: $blue ;
+        }
+        span{
+            padding-top: 5px;
+        }
+        p{
+            line-height: 18px;
+            font-size: 12px;
+            color: #999;
+        }
+    }
+}
+
+.upload-table{
+    .pros,.cons{
+        img{
+            width: 100px;
+            height: 60px;
+            object-fit: cover;
+        }
+    }
+}
+
+.upload-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    text-align: center;
+    .item{
+        position: relative;
+        width: 300px;
+        height: 180px;
+        margin: 0 10px;
+        cursor: pointer;
+        &.card1{
+            background: url(../img/card1.png) no-repeat center center;
+        }
+        &.card2{
+            background: url(../img/card2.png) no-repeat center center;
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 1;
+            i{
+                font-size: 50px;
+                color: $blue ;
+            }
+        }
+        .layui-upload-list{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 2;
+            li{
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                border: 0;
+                i{
+                    width: 100%;
+                    height: 100%;
+                    text-indent: -9999px;
+                }
+            }
+        }
+    }
+}
+
+
+// 申请提现
+.tag-con{
+    display: flex;
+    align-items: stretch;
+    padding-top: 10px;
+    .item{
+        display: flex;
+        align-items: center;
+        min-width: 250px;
+        padding: 10px 20px;
+        margin-right: 10px;
+        border: 2px solid #e0e0e0;
+        cursor: pointer;
+        img{
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+        .text{
+            line-height: 24px;
+            font-size: 12px;
+        }
+        &.on{
+            border-color: $blue ;
+        }
+    }
+}
+

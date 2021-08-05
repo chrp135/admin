@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/js/layui/css/layui.css">
+    <link rel="stylesheet" href="static/css/admin.css">
+    <title>旅业盒子</title>
+</head>
+<style>
+    /* 栅格示例 */
+    .grid-demo {
+        padding: 10px;
+        line-height: 50px;
+        text-align: center;
+        background-color: #79C48C;
+        color: #fff;
+    }
+
+    .grid-demo-bg1 {
+        background-color: #63BA79;
+    }
+
+    .grid-demo-bg2 {
+        background-color: #49A761;
+    }
+
+    .grid-demo-bg3 {
+        background-color: #38814A;
+    }
+</style>
+
+<body>
+    <div class="header-con flex-box">
+        <div class="logo">
+            <img src="static/img/logo.png">
+        </div>
+        <div class="lxs layui-nav">
+            <div class="lxs-name"><i class="iconfont icon-qiye"></i>厦门宝中旅行社</div>
+            <div class="layui-nav-item c-blue">
+                <a href="javascript:;" class="">切换</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">选项1</a></dd>
+                    <dd><a href="">选项2</a></dd>
+                    <dd><a href="">选项3</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="login-status layui-nav">
+            <div class="layui-nav-item">
+                <a href="javascript:;">欢迎您，陈明明</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">选项1</a></dd>
+                    <dd><a href="">选项2</a></dd>
+                    <dd><a href="">选项3</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="left-con">
+        <div class="scroll-con">
+            <dl>
+                <dt>
+                    <a href="javascript:;">
+                        <i class="iconfont icon-shouye"></i>
+                        <cite>首页</cite>
+                    </a>
+                </dt>
+            </dl>
+            <dl class="open">
+                <dt href="javascript:;">
+                    <i class="iconfont icon-renwuguanli"></i>
+                    <cite>任务管理</cite>
+                    <i class="iconfont icon-angle-down"></i>
+                </dt>
+                <dd>
+                    <a href="" class="on">任务管理</a>
+                    <a href="">申请开票</a>
+                    <a href="">开票记录</a>
+                    <a href="">完税凭证</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt href="javascript:;">
+                    <i class="iconfont icon-lingkeguanli"></i>
+                    <cite>零客管理</cite>
+                    <i class="iconfont icon-angle-down"></i>
+                </dt>
+                <dd>
+                    <a href="">采购订单</a>
+                    <a href="">分销订单</a>
+                    <a href="">保险订单</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt href="javascript:;">
+                    <i class="iconfont icon-fuwushang"></i>
+                    <cite>服务商</cite>
+                    <i class="iconfont icon-angle-down"></i>
+                </dt>
+                <dd>
+                    <a href="">邀请分销商</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt href="javascript:;">
+                    <i class="iconfont icon-caiwu1"></i>
+                    <cite>财务</cite>
+                    <i class="iconfont icon-angle-down"></i>
+                </dt>
+                <dd>
+                    <a href="">资金管理</a>
+                    <a href="">提现申请</a>
+                    <a href="">发票管理</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt href="javascript:;">
+                    <i class="iconfont icon-shezhi"></i>
+                    <cite>设置</cite>
+                    <i class="iconfont icon-angle-down"></i>
+                </dt>
+                <dd>
+                    <a href="">常用信息</a>
+                    <a href="">账号信息</a>
+                    <a href="">修改密码</a>
+                </dd>
+            </dl>
+        </div>
+        <a href="javascript:;" class="btn-side J-btn-side"><i class="iconfont icon-left"></i></a>
+    </div>
+    <div class="body-con">
+        <div class="body-wrap">
+            <div class="ndwz">
+                <a href="">首页</a> > <a href="">任务管理</a> > <span>任务详情</span>
+            </div>
+            <div class="ui-tag-tit">
+                <ul>
+                    <li><a href="javascript:;" class="on">用工企业详情</a></li>
+                </ul>
+            </div>
+            <div class="layui-card pd-20">
+                <div class="ui-tit">
+                    <b>基本配置</b>
+                </div>
+                <blockquote class="layui-elem-quote">注意：下述演示中的颜色只是做一个区分作用，并非栅格内置。</blockquote>
+
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+                    <legend>始终等比例水平排列</legend>
+                </fieldset>
+
+                <div class="layui-row">
+                    <div class="layui-col-xs6">
+                        <div class="grid-demo grid-demo-bg1">6/12</div>
+                    </div>
+                    <div class="layui-col-xs6">
+                        <div class="grid-demo">6/12</div>
+                    </div>
+                </div>
+                <div class="layui-row">
+                    <div class="layui-col-xs3">
+                        <div class="grid-demo grid-demo-bg1">3/12</div>
+                    </div>
+                    <div class="layui-col-xs3">
+                        <div class="grid-demo">3/12</div>
+                    </div>
+                    <div class="layui-col-xs3">
+                        <div class="grid-demo grid-demo-bg1">3/12</div>
+                    </div>
+                    <div class="layui-col-xs3">
+                        <div class="grid-demo">3/12</div>
+                    </div>
+                </div>
+
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+                    <legend>移动设备、桌面端的组合响应式展现</legend>
+                </fieldset>
+
+                <div class="layui-row">
+                    <div class="layui-col-xs12 layui-col-md8">
+                        <div class="grid-demo grid-demo-bg1">移动：12/12、桌面：8/12</div>
+                    </div>
+                    <div class="layui-col-xs6 layui-col-md4">
+                        <div class="grid-demo">移动：6/12、桌面：4/12</div>
+                    </div>
+                    <div class="layui-col-xs6 layui-col-md12">
+                        <div class="grid-demo grid-demo-bg2">移动：6/12、桌面：12/12</div>
+                    </div>
+                </div>
+
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+                    <legend>移动设备、平板、桌面端的复杂组合响应式展现</legend>
+                </fieldset>
+
+                <div class="layui-row">
+                    <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                        <div class="grid-demo grid-demo-bg1">移动：6/12 | 平板：6/12 | 桌面：4/12</div>
+                    </div>
+                    <div class="layui-col-xs6 layui-col-sm6 layui-col-md4">
+                        <div class="grid-demo layui-bg-red">移动：6/12 | 平板：6/12 | 桌面：4/12</div>
+                    </div>
+                    <div class="layui-col-xs4 layui-col-sm12 layui-col-md4">
+                        <div class="grid-demo layui-bg-blue">移动：4/12 | 平板：12/12 | 桌面：4/12</div>
+                    </div>
+                    <div class="layui-col-xs4 layui-col-sm7 layui-col-md8">
+                        <div class="grid-demo layui-bg-green">移动：4/12 | 平板：7/12 | 桌面：8/12</div>
+                    </div>
+                    <div class="layui-col-xs4 layui-col-sm5 layui-col-md4">
+                        <div class="grid-demo layui-bg-black">移动：4/12 | 平板：5/12 | 桌面：4/12</div>
+                    </div>
+                </div>
+
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+                    <legend>常规布局：从小屏幕堆叠到桌面水平排列</legend>
+                </fieldset>
+
+                <div class="layui-row">
+                    <div class="layui-col-md1">
+                        <div class="grid-demo grid-demo-bg1">1/12</div>
+                    </div>
+                    <div class="layui-col-md1">
+                        <div class="grid-demo">1/12</div>
+                    </div>
+                    <div class="layui-col-md1">
+                        <div class="grid-demo grid-demo-bg1">1/12</div>
+                    </div>
+                    <div class="layui-col-md1">
+                        <div class="grid-demo">1/12</div>
+                    </div>
+                    <div class="layui-col-md1">
+                        <div class="grid-demo grid-demo-bg1">1/12</div>
+                    </div>
+                    <div class="layui-col-md1">
+                        <div class="grid-demo">1/12</div>
+                    </div>
+                    <div class="layui-col-md1">
+                        <div class="grid-demo grid-demo-bg1">1/12</div>
+                    </div>
+                    <div class="layui-col-md1">
+                        <div class="grid-demo">1/12</div>
+                    </div>
+                    <div class="layui-col-md1">
+                        <div class="grid-demo grid-demo-bg1">1/12</div>
+                    </div>
+                    <div class="layui-col-md1">
+                        <div class="grid-demo">1/12</div>
+                    </div>
+                    <div class="layui-col-md1">
+                        <div class="grid-demo grid-demo-bg1">1/12</div>
+                    </div>
+                    <div class="layui-col-md1">
+                        <div class="grid-demo">1/12</div>
+                    </div>
+                </div>
+
+                <div class="layui-row">
+                    <div class="layui-col-md9">
+                        <div class="grid-demo grid-demo-bg1">75%</div>
+                    </div>
+                    <div class="layui-col-md3">
+                        <div class="grid-demo">25%</div>
+                    </div>
+                </div>
+
+                <div class="layui-row">
+                    <div class="layui-col-md4">
+                        <div class="grid-demo grid-demo-bg1">33.33%</div>
+                    </div>
+                    <div class="layui-col-md4">
+                        <div class="grid-demo">33.33%</div>
+                    </div>
+                    <div class="layui-col-md4">
+                        <div class="grid-demo grid-demo-bg1">33.33%</div>
+                    </div>
+                </div>
+
+                <div class="layui-row">
+                    <div class="layui-col-md6">
+                        <div class="grid-demo grid-demo-bg1">50%</div>
+                    </div>
+                    <div class="layui-col-md6">
+                        <div class="grid-demo">50%</div>
+                    </div>
+                </div>
+
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+                    <legend>列间隔</legend>
+                </fieldset>
+
+                <div class="layui-row layui-col-space1">
+                    <div class="layui-col-md3">
+                        <div class="grid-demo grid-demo-bg1">1/4</div>
+                    </div>
+                    <div class="layui-col-md3">
+                        <div class="grid-demo">1/4</div>
+                    </div>
+                    <div class="layui-col-md3">
+                        <div class="grid-demo grid-demo-bg1">1/4</div>
+                    </div>
+                    <div class="layui-col-md3">
+                        <div class="grid-demo">1/4</div>
+                    </div>
+                </div>
+
+                <div class="layui-row layui-col-space5">
+                    <div class="layui-col-md4">
+                        <div class="grid-demo grid-demo-bg1">1/3</div>
+                    </div>
+                    <div class="layui-col-md4">
+                        <div class="grid-demo">1/3</div>
+                    </div>
+                    <div class="layui-col-md4">
+                        <div class="grid-demo grid-demo-bg1">1/3</div>
+                    </div>
+                </div>
+
+                <div class="layui-row layui-col-space10">
+                    <div class="layui-col-md9">
+                        <div class="grid-demo grid-demo-bg1">9/12</div>
+                    </div>
+                    <div class="layui-col-md3">
+                        <div class="grid-demo">3/12</div>
+                    </div>
+                </div>
+
+                <div class="layui-row layui-col-space15">
+                    <div class="layui-col-md7">
+                        <div class="grid-demo grid-demo-bg1">7/12</div>
+                    </div>
+                    <div class="layui-col-md5">
+                        <div class="grid-demo">5/12</div>
+                    </div>
+                </div>
+
+                <div class="layui-row layui-col-space30">
+                    <div class="layui-col-md7">
+                        <div class="grid-demo grid-demo-bg1">7/12</div>
+                    </div>
+                    <div class="layui-col-md5">
+                        <div class="grid-demo">5/12</div>
+                    </div>
+                </div>
+
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+                    <legend>列偏移</legend>
+                </fieldset>
+
+                <div class="layui-row">
+                    <div class="layui-col-md4">
+                        <div class="grid-demo grid-demo-bg1">4/12</div>
+                    </div>
+                    <div class="layui-col-md4 layui-col-md-offset4">
+                        <div class="grid-demo">偏移4列</div>
+                    </div>
+                    <div class="layui-col-md1 layui-col-md-offset5">
+                        <div class="grid-demo grid-demo-bg1">偏移5列</div>
+                    </div>
+                    <div class="layui-col-md1">
+                        <div class="grid-demo">不偏移</div>
+                    </div>
+                </div>
+
+                <div class="layui-row">
+                    <div class="layui-col-md3 layui-col-md-offset3">
+                        <div class="grid-demo grid-demo-bg1">偏移3列</div>
+                    </div>
+                    <div class="layui-col-md3 layui-col-md-offset1">
+                        <div class="grid-demo">偏移1列</div>
+                    </div>
+                </div>
+
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+                    <legend>栅格嵌套</legend>
+                </fieldset>
+
+                <div class="layui-row">
+                    <div class="layui-col-md5">
+                        <div class="layui-row grid-demo">
+                            <div class="layui-col-md3">
+                                <div class="grid-demo grid-demo-bg1">内部列</div>
+                            </div>
+                            <div class="layui-col-md9">
+                                <div class="grid-demo grid-demo-bg2">内部列</div>
+                            </div>
+                            <div class="layui-col-md12">
+                                <div class="grid-demo grid-demo-bg3">内部列</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layui-col-md7">
+                        <div class="layui-row grid-demo grid-demo-bg1">
+                            <div class="layui-col-md12">
+                                <div class="grid-demo">内部列</div>
+                            </div>
+                            <div class="layui-col-md9">
+                                <div class="grid-demo grid-demo-bg2">内部列</div>
+                            </div>
+                            <div class="layui-col-md3">
+                                <div class="grid-demo grid-demo-bg3">内部列</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="layui-fluid">
+                    <fieldset class="layui-elem-field layui-field-title">
+                        <legend>流体容器（宽度自适应，不固定）</legend>
+                    </fieldset>
+                    <div class="layui-row">
+                        <div class="layui-col-sm3">
+                            <div class="grid-demo grid-demo-bg1">25%</div>
+                        </div>
+                        <div class="layui-col-sm3">
+                            <div class="grid-demo">25%</div>
+                        </div>
+                        <div class="layui-col-sm3">
+                            <div class="grid-demo grid-demo-bg1">25%</div>
+                        </div>
+                        <div class="layui-col-sm3">
+                            <div class="grid-demo">25%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-con">
+            &copy; Copyright 2020 多多优采&emsp;|&emsp;技术支持：<a>厦门市旅动力信息有限公司</a>
+        </div>
+    </div>
+
+    <script type="text/html" id="tpl-mobile-qrcode">
+    <div class="qrcode text-c" data-url="{{#qrcode_url}}">
+        <p>手机扫码预订产品：</p>
+        <div id="qrcode_order" class="text-c sub-img-auto mg-t-10"></div>
+    </div>
+</script>
+    <script src="static/js/layui/layui.js"></script>
+    <script src="static/js/layui/config.js"></script>
+    <!-- <script src="static/js/qrcode.min.js"></script> -->
+    <script src="static/js/layui/area_json.js"></script>
+    <script>
+        layui.use(['laydate', 'layer', 'table', 'form', 'upload', 'element', 'laytpl', 'layuiarea'], function () {
+            var $ = layui.jquery
+                , laydate = layui.laydate //日期
+                , layer = layui.layer //弹层
+                , table = layui.table // 表格
+                , form = layui.form //表单
+                , upload = layui.upload
+                , element = layui.element //元素操作
+                , laytpl = layui.laytpl
+                , layedit = layui.layedit
+                , common = layui.common
+            // , tableNav = layui.tableNav
+
+            // 获取select选中值 select添加属性lay-filter="xxx"
+            form.on('select(test)', function (data) {
+                console.log(data.value);
+            })
+
+
+            // 正则验证
+            form.verify({
+                username: function (value, item) { //value：表单的值、item：表单的DOM对象
+                    if (!new RegExp("^[a-zA-Z0-9_\u4e00-\u9fa5\\s·]+$").test(value)) {
+                        return '保单联系人不能有特殊字符';
+                    }
+                    if (/(^\_)|(\__)|(\_+$)/.test(value)) {
+                        return '保单联系人首尾不能出现下划线\'_\'';
+                    }
+                    if (/^\d+\d+\d$/.test(value)) {
+                        return '保单联系人不能全为数字';
+                    }
+                    //如果不想自动弹出默认提示框，可以直接返回 true，这时你可以通过其他任意方式提示（v2.5.7 新增）
+                    if (value === 'xxx') {
+                        alert('保单联系人不能为敏感词');
+                        return true;
+                    }
+                }
+                , mobile: [/^1[2-9]\d{9}$/, '手机号码错误']
+                , email: [/^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/, '邮箱格式错误']
+
+            });
+
+            // 城市联动
+            layuiarea = layui.layuiarea();
+
+            //日期范围
+            laydate.render({
+                elem: '#start_date'
+                , range: true
+            });
+
+
+            //普通图片上传
+            // var uploadInst = upload.render({
+            //     elem: '#test1'
+            //     // ,url: 'https://httpbin.org/post' //改成您自己的上传接口
+            //     , before: function (obj) {
+            //         //预读本地文件示例，不支持ie8
+            //         obj.preview(function (index, file, result) {
+            //         $('#demo1').attr('src', result); //图片链接（base64）
+            //         });
+            //     }
+            // });
+
+            // 上传多图
+            upload.render({
+                elem: '#test1'
+                , url: '/api/upload/'
+                , auto: false //选择文件后不自动上传
+                , multiple: true
+                , bindAction: '#testListAction' //指向一个按钮触发上传
+                , choose: function (obj) {
+                    //将每次选择的文件追加到文件队列
+                    var files = obj.pushFile();
+                    //预读本地文件，如果是多文件，则会遍历。(不支持ie8/9)
+                    obj.preview(function (index, file, result) {
+                        $('#upload-list').append('<li><i class="iconfont icon-guanbi2fill"></i><img src="' + result + '" alt="' + file.name + '" class="layui-upload-img"></li>')
+                        // console.log(index); //得到文件索引
+                        // console.log(file); //得到文件对象
+                        // console.log(result); //得到文件base64编码，比如图片
+                        //obj.resetFile(index, file, '123.jpg'); //重命名文件名，layui 2.3.0 开始新增
+                        //这里还可以做一些 append 文件列表 DOM 的操作
+                        obj.upload(index, file); //对上传失败的单个文件重新上传，一般在某个事件中使用
+                        //delete files[index]; //删除列表中对应的文件，一般在某个事件中使用
+                        $('body').on('click', '#upload-list i', function () {
+                            var self = $(this),
+                                li = self.parents('li')
+                            var i = li.index()
+                            console.log(i);
+                            li.remove()
+                            delete files[i];
+                        })
+                    });
+                    console.log(files);
+                }, done: function () {
+
+                }
+
+            });
+
+            html = $('#tpl-mobile-qrcode').html()
+
+            form.on('submit(formSubmit)', function (data) {
+                // layer.alert(JSON.stringify(data.field), {
+                //     title: '最终的提交信息'
+                // })
+                // 弹出提示
+                // layer.msg('弹出提示',{icon:1})
+
+                // 弹出页面层
+                // layer.open({
+                //     type: 1
+                //     , title: '手机预订'
+                //     , area: ['400px', '300px']
+                //     , shade: .3
+                //     , btnAlign: 'c'
+                //     , content: html
+                //     // , btn: ["提交", '关闭'] //只是为了演示
+                //     , success: function(){
+
+                //     }
+                //     , yes: function (index, layero) {
+                //     }
+                // });
+
+                //弹出确认框
+                layer.confirm('您是如何看待前端开发？', {
+                    icon: 0, //提示icon：{0:'惊',1:'对',2:'错',3:'问',4:'锁',5:'哭',6:'笑'}
+                    btn: ['确定', '取消'], //按钮
+                    btnAlign: 'c', //操作按钮居中
+                    shade: [0.3, '#000'] //不显示遮罩
+                }, function () {
+                    //确定的内容
+                }, function () {
+                    //取消的内容
+                });
+
+            });
+
+            // 弹出iframe层
+            $('body').on('click', '.J-edit', function () {
+                var self = $(this),
+                    type = 1,
+                    id = self.attr('data-id');
+                layer.open({
+                    type: 2 //此处以iframe举例
+                    , title: "编辑"
+                    , area: ['500px', '450px']
+                    , shade: .3
+                    , maxmin: true
+                    , content: 'http://www.cncn.com' //具体页面地址
+                    , btn: ['确认', '取消'] //只是为了演示
+                    , btnAlign: 'c'
+                    , yes: function (index, layero) {
+                        var body = layer.getChildFrame('body', index);
+                        var name = body.find('input[name="name"]').val();
+                        var provice = body.find('select[name="provice"]').val();
+                        var city = body.find('select[name="city"]').val();
+                        var town = body.find('select[name="town"]').val();
+                        var street = body.find('select[name="street"]').val();
+                        var id = body.find('input[name="id"]').val();
+                        var code = body.find('input[name="code"]').val();
+
+                        var post_data = { "name": name, "provice": provice, "city": city, "town": town, "street": street, "id": id, "code": code };
+                        $.ajax({
+                            url: '',
+                            type: 'get',
+                            data: post_data,
+                            dataType: 'json',
+                            success: function (data1) {
+                                console.log(data1)
+                                if (data1.code == 202) {
+                                    layer.msg(data1.msg);
+                                } else {
+                                    window.location.reload();
+                                }
+                            }
+                        })
+
+                    }
+                    , btn2: function () {
+                        layer.closeAll();
+                    }
+                });
+            })
+
+        })
+
+    </script>
+</body>
+
+</html>

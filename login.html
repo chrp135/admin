@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/js/layui/css/layui.css">
+    <link rel="stylesheet" href="static/css/login.css">
+    <title>旅业盒子</title>
+</head>
+<body>
+    <div class="header">
+        <div class="box1200">
+            <div class="logo">
+                <img src="static/img/logo-big.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="login-warp">
+        <div class="login-warp-bg">
+            <div class="swiper-container swiper-banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="static/img/banner.jpg"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="login-container">
+            <div class="login-box">
+                <!-- <sup class="J-login-type">扫码登录</sup> -->
+                <div class="login-tab">
+                    <a href="javascript:;" class="on">企业</a>
+                    <a href="javascript:;">零客</a>
+                </div>
+                <form class="login-form" method="post">
+                    <input type="hidden" name="kind_login" value="0">
+                    <ul>
+                        <li>
+                            <div class="item">
+                                <span><i class="icon icon_username">&nbsp;</i></span>
+                                <input type="text" name="account" value="" class="" placeholder="账号" maxlength="32">
+                            </div>
+                        </li>
+                        <li class="password-code">
+                            <div class="item">
+                                <span><i class="icon icon_password">&nbsp;</i></span>
+                                <input type="password" name="password" value="" class="" placeholder="密码" maxlength="32" autocomplete="new-password">
+                            </div>
+                        </li>
+                        <li>
+                            <img id="js-captcha-img" class="captcha-img" alt="点击换一张" title="点击换一张" src="https://byc.zuiduo.com/captcha">
+                            <div class="item captcha">
+                                <span><i class="icon icon_code">&nbsp;</i></span>
+                                <input type="text" name="img_captcha" value="" class="" placeholder="验证码" maxlength="32">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="error_tips">
+                        <p style="display: none">
+                            <i class="icon icon_error">&nbsp;</i>
+                            <span id="js-error-tip"></span>
+                        </p>
+                    </div>
+                    <a href="javascript:;" id="js-submit" class="btn_login font-m">立 即 登 录</a>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="box1200">
+                <div class="link">
+                    <a href="">产品服务</a>
+                    <a href="">行业解决方案</a>
+                    <a href="">关于我们</a>
+                </div>
+                <div class="copyright">
+                    &copy Copyright 2020 旅业盒子 版权所有 闽ICP15027218号-1
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/layui/layui.js"></script>
+    <script src="static/js/layui/config.js"></script>
+    <!-- <script src="static/js/qrcode.min.js"></script> -->
+    <script src="static/js/layui/area_json.js"></script>
+    <script>
+        layui.use(['laydate', 'layer', 'table', 'form', 'upload', 'element', 'laytpl', 'layuiarea', 'echarts'], function () {
+            var $ = layui.jquery
+                , laydate = layui.laydate //日期
+                , layer = layui.layer //弹层
+                , table = layui.table // 表格
+                , form = layui.form //表单
+                , upload = layui.upload
+                , element = layui.element //元素操作
+                , laytpl = layui.laytpl
+                , layedit = layui.layedit
+                , common = layui.common
+            // , tableNav = layui.tableNav
+
+                // var swiper = new Swiper('.swiper-banner', {
+                //     autoplay: {
+                //         delay: 5000,
+                //         stopOnLastSlide: false,
+                //         disableOnInteraction: true,
+                //     },
+                //     pagination: {
+                //         el: '.swiper-pagination',
+                //         // dynamicBullets: true,
+                //     },
+                // });
+
+                $('body').on('click','.login-tab a',function(){
+                    var self = $(this),
+                        index = self.index(),
+                        kind_login = $('input[name="kind_login"]')
+                    self.addClass('on').siblings().removeClass('on')
+                    kind_login.val(index)
+                    $('.login-form li').find('.item').removeClass('error')
+                    $('.error_tips p').hide()
+                    
+                    $('input[name="account"]').val('')
+                    $('input[name="password"]').val('')
+                })
+                var $inputs = $('.login-form input'),
+                    $errTip = $('#js-error-tip');
+                $inputs.focus(function () {
+                    $(this).closest('.item').addClass('focus');
+                }).blur(function () {
+                    $(this).closest('.item').removeClass('focus');
+                }).keyup(function () {
+                    var $this = $(this);
+                    if (!$this.val())
+                        return
+                    if (!$this.closest('.item').hasClass('error'))
+                        return;
+                    $this.closest('.item').removeClass('error').addClass('focus');
+                    $errTip.parent().hide();
+                }).filter('[type="text"]').first().focus();
+
+                if ($errTip.text().indexOf('验证码输入错误') != -1) {
+                    $('[name=img_captcha]').focus().closest('.item').removeClass('focus').addClass('error');
+                }
+                // 验证码切换
+                $('#js-captcha-img').click(function () {
+                    // this.src = ucai_2b_url + 'captcha?sa=' + Math.random();
+                });
+
+                // 登录
+                $('body').on('click','#js-submit',function () {
+                    var kind_login = $('input[name="kind_login"]')
+                    $errTip.text('');
+                    var $account = $('[name=account]');
+                    if($account.val() == ''){
+                        if(kind_login.val() == 0){
+                            $errTip.text('请输入企业账号');
+                        }else{
+                            $errTip.text('请输入零客账号');
+                        }
+                        $account.focus().closest('.item').removeClass('focus').addClass('error');
+                        $errTip.parent().show();
+                        return;
+                    }
+                    var $password = $('input[name=password]');
+                    if ($password.val() == '') {
+                        $errTip.text('请输入密码');
+                        $password.focus().closest('.item').removeClass('focus').addClass('error');
+                        $errTip.parent().show();
+                        return;
+                    }
+                    var $captcha = $('[name=img_captcha]');
+                    if ($captcha.val() == '') {
+                        $errTip.text('请输入验证码');
+                        $captcha.focus().closest('.item').removeClass('focus').addClass('error');
+                        $errTip.parent().show();
+                        return;
+                    }
+
+                    //立即登录
+
+                });
+
+
+        })
+
+    </script>
+</body>
+
+</html>

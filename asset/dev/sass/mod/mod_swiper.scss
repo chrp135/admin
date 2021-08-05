@@ -1,0 +1,43 @@
+/*首页banner*/
+.swiper-container3 {
+    position: relative;
+    overflow: hidden
+}
+.swiper-container3 .swiper-wrapper {
+    position: relative
+}
+
+.swiper-container3 .swiper-wrapper .swiper-slide {
+    float: left
+}
+
+.swiper-container3 .swiper-wrapper .swiper-slide img {
+    width: 100%
+}
+.pagination {
+    position: absolute;
+    z-index: 20;
+    bottom: 0!important;
+    width: 100%;
+    text-align: center
+}
+
+.pagination .swiper-pagination-bullet{
+    height:.1rem;
+    width:.1rem;
+    border-radius:.05rem;
+    margin:0 .08rem;
+    display:inline-block;
+    opacity: 1;
+    background:#fff;
+    overflow:hidden;
+    text-indent:99999px;
+    vertical-align: top;
+    transition: all 0.2s ease-in;
+}
+.pagination .swiper-pagination-bullet-active{
+    width: .38rem;
+    height: .08rem;
+    margin-top: .01rem;
+    background:#65c201;
+}

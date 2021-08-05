@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/js/layui/css/layui.css">
+    <link rel="stylesheet" href="static/css/admin.css">
+    <title>旅业盒子</title>
+</head>
+
+<body>
+    <div class="header-con flex-box">
+        <div class="logo">
+            <img src="static/img/logo.png">
+        </div>
+        <div class="lxs layui-nav">
+            <div class="lxs-name"><i class="iconfont icon-qiye"></i>厦门宝中旅行社</div>
+            <div class="layui-nav-item c-blue">
+                <a href="javascript:;" class="">切换</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">选项1</a></dd>
+                    <dd><a href="">选项2</a></dd>
+                    <dd><a href="">选项3</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="login-status layui-nav">
+            <div class="layui-nav-item">
+                <a href="javascript:;">欢迎您，陈明明</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">选项1</a></dd>
+                    <dd><a href="">选项2</a></dd>
+                    <dd><a href="">选项3</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="left-con">
+        <div class="scroll-con">
+                <dl>
+                    <dt>
+                        <a href="javascript:;">
+                            <i class="iconfont icon-shouye"></i>
+                            <cite>首页</cite>
+                        </a>
+                    </dt>
+                </dl>
+                <dl class="open">
+                    <dt href="javascript:;">
+                        <i class="iconfont icon-renwuguanli"></i>
+                        <cite>任务管理</cite>
+                        <i class="iconfont icon-angle-down"></i>
+                    </dt>
+                    <dd>
+                        <a href="" class="on">任务管理</a>
+                        <a href="">申请开票</a>
+                        <a href="">开票记录</a>
+                        <a href="">完税凭证</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt href="javascript:;">
+                        <i class="iconfont icon-lingkeguanli"></i>
+                        <cite>零客管理</cite>
+                        <i class="iconfont icon-angle-down"></i>
+                    </dt>
+                    <dd>
+                        <a href="">采购订单</a>
+                        <a href="">分销订单</a>
+                        <a href="">保险订单</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt href="javascript:;">
+                        <i class="iconfont icon-fuwushang"></i>
+                        <cite>服务商</cite>
+                        <i class="iconfont icon-angle-down"></i>
+                    </dt>
+                    <dd>
+                        <a href="">邀请分销商</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt href="javascript:;">
+                        <i class="iconfont icon-caiwu1"></i>
+                        <cite>财务</cite>
+                        <i class="iconfont icon-angle-down"></i>
+                    </dt>
+                    <dd>
+                        <a href="">资金管理</a>
+                        <a href="">提现申请</a>
+                        <a href="">发票管理</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt href="javascript:;">
+                        <i class="iconfont icon-shezhi"></i>
+                        <cite>设置</cite>
+                        <i class="iconfont icon-angle-down"></i>
+                    </dt>
+                    <dd>
+                        <a href="">常用信息</a>
+                        <a href="">账号信息</a>
+                        <a href="">修改密码</a>
+                    </dd>
+                </dl>
+        </div>
+        <a href="javascript:;" class="btn-side J-btn-side"><i class="iconfont icon-left"></i></a>
+    </div>
+    <div class="body-con">
+        <div class="body-wrap">
+            <div class="ndwz">
+                <a href="">首页</a> > <a href="">任务管理</a> > <span>任务详情</span>
+            </div>
+            <div class="layui-card pd-20">
+                <div class="ui-tit">
+                    <b>任务详情</b>
+                </div>
+                <div class="layui-card-body">
+                    <div class="step-con step-num vh80">
+                        <ul>
+                            <li class="on"><sup>1</sup><span>进行中</span></li>
+                            <li class="on"><sup>2</sup><span>待支付</span></li>
+                            <li><sup>3</sup><span>支付待确认</span></li>
+                            <li><sup>4</sup><span>已完成</span></li>
+                        </ul>
+                        <div class="tip"><i class="iconfont icon-tishi"></i>任务进行中，如果任务已完成，请及时确认完成</div>
+                        <div class="btn-con">
+                            <a href="" class="layui-btn plain">取消</a>
+                            <a href="" class="layui-btn btn-normal">确认完成</a>
+                        </div>
+                    </div>
+                    <table class="table-flex mg-t-20">
+                        <tbody>
+                            <tr>
+                                <th>服务商：</th>
+                                <td>厦门宝中国际旅行社</td>
+                                <th>任务开始：</th>
+                                <td>2021-01-10&emsp;6:50</td>
+                                <th>任务佣金：</th>
+                                <td>¥500</td>
+                            </tr>
+                            <tr>
+                                <th>任务名称：</th>
+                                <td>厦门至北京10人地接旅游团</td>
+                                <th>任务结束：</th>
+                                <td>2020-01-13&emsp;17:30</td>
+                                <th>承包收入：</th>
+                                <td>¥2000</td>
+                            </tr>
+                            <tr>
+                                <th>任务类型：</th>
+                                <td>导游包车+ 住宿</td>
+                                <th>任务时长：</th>
+                                <td>8h</td>
+                                <th>任务说明：</th>
+                                <td>--</td>
+                            </tr>
+                            <tr>
+                                <th>零客人数：</th>
+                                <td>30人</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="ui-tit mg-t-20">
+                    <b>参与零客</b>
+                </div>
+                <div class="layui-card-body mg-t-20">
+                    <table class="layui-table" lay-filter="table-list">
+                        <thead>
+                            <tr>
+                                <th width="60">任务单号</th>
+                                <th width="">任务名称</th>
+                                <th width="100">服务商</th>
+                                <th width="120">任务类型</th>
+                                <th width="">企业</th>
+                                <th width="80">任务开始</th>
+                                <th width="80">任务结束</th>
+                                <th width="60">零客人数</th>
+                                <th width="60">支付方式</th>
+                                <th width="80">创建时间</th>
+                                <th width="60">状态</th>
+                                <th width="100">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>项目宣传推广服务</td>
+                                <td>云游龙江</td>
+                                <td>文案撰写与发布服务</td>
+                                <td><a href="">厦门宝中旅行社</a></td>
+                                <td>2020-05-24<br>15:42</td>
+                                <td>2020-05-24<br>15:42</td>
+                                <td>3000.00</td>
+                                <td>微信</td>
+                                <td>2020-05-24<br>15:42</td>
+                                <td><span class="c-blue">进行中</span></td>
+                                <td>
+                                    <a href="">详情</a>
+                                    <div class="toolbar">
+                                        <span class="btn-more">更多<i></i></span>
+                                        <ul class="toolbar-hide J_operation_list">
+                                            <li>
+                                                <a class="J-show-detail" data-id="2933" href="javascript:void(0);"
+                                                    title="编辑产品">
+                                                    <span class="bg_1 item_detail" data-val="2933">详情</span><br>详情
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>项目宣传推广服务</td>
+                                <td>云游龙江</td>
+                                <td>文案撰写与发布服务</td>
+                                <td><a href="">厦门宝中旅行社</a></td>
+                                <td>2020-05-24<br>15:42</td>
+                                <td>2020-05-24<br>15:42</td>
+                                <td>3000.00</td>
+                                <td>微信</td>
+                                <td>2020-05-24<br>15:42</td>
+                                <td><span class="c-green">已完成</span></td>
+                                <td>
+                                    <a href="">详情</a>
+                                    <div class="toolbar">
+                                        <span class="btn-more">更多<i></i></span>
+                                        <ul class="toolbar-hide J_operation_list">
+                                            <li>
+                                                <a class="J-show-detail" data-id="2933" href="javascript:void(0);"
+                                                    title="编辑产品">
+                                                    <span class="bg_1 item_detail" data-val="2933">详情</span><br>详情
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>项目宣传推广服务</td>
+                                <td>云游龙江</td>
+                                <td>文案撰写与发布服务</td>
+                                <td><a href="">厦门宝中旅行社</a></td>
+                                <td>2020-05-24<br>15:42</td>
+                                <td>2020-05-24<br>15:42</td>
+                                <td>3000.00</td>
+                                <td>微信</td>
+                                <td>2020-05-24<br>15:42</td>
+                                <td><span class="c-orange">支付待确认</span></td>
+                                <td>
+                                    <a href="">详情</a>
+                                    <div class="toolbar">
+                                        <span class="btn-more">更多<i></i></span>
+                                        <ul class="toolbar-hide J_operation_list">
+                                            <li>
+                                                <a class="J-show-detail" data-id="2933" href="javascript:void(0);"
+                                                    title="编辑产品">
+                                                    <span class="bg_1 item_detail" data-val="2933">详情</span><br>详情
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>项目宣传推广服务</td>
+                                <td>云游龙江</td>
+                                <td>文案撰写与发布服务</td>
+                                <td><a href="">厦门宝中旅行社</a></td>
+                                <td>2020-05-24<br>15:42</td>
+                                <td>2020-05-24<br>15:42</td>
+                                <td>3000.00</td>
+                                <td>微信</td>
+                                <td>2020-05-24<br>15:42</td>
+                                <td><span class="c-red">支付失败</span></td>
+                                <td>
+                                    <a href="">详情</a>
+                                    <div class="toolbar">
+                                        <span class="btn-more">更多<i></i></span>
+                                        <ul class="toolbar-hide J_operation_list">
+                                            <li>
+                                                <a class="J-show-detail" data-id="2933" href="javascript:void(0);"
+                                                    title="编辑产品">
+                                                    <span class="bg_1 item_detail" data-val="2933">详情</span><br>详情
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>项目宣传推广服务</td>
+                                <td>云游龙江</td>
+                                <td>文案撰写与发布服务</td>
+                                <td><a href="">厦门宝中旅行社</a></td>
+                                <td>2020-05-24<br>15:42</td>
+                                <td>2020-05-24<br>15:42</td>
+                                <td>3000.00</td>
+                                <td>微信</td>
+                                <td>2020-05-24<br>15:42</td>
+                                <td><span class="c-grey">订单取消</span></td>
+                                <td>
+                                    <a href="">详情</a>
+                                    <div class="toolbar">
+                                        <span class="btn-more">更多<i></i></span>
+                                        <ul class="toolbar-hide J_operation_list">
+                                            <li>
+                                                <a class="J-show-detail" data-id="2933" href="javascript:void(0);"
+                                                    title="编辑产品">
+                                                    <span class="bg_1 item_detail" data-val="2933">详情</span><br>详情
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="ui-tit mg-t-20">
+                    <b>承包协议</b>
+                </div>
+                <div class="layui-card-body mg-t-20">
+                    <table class="table-flex">
+                        <tbody>
+                            <tr>
+                                <th>签订时间：</th>
+                                <td>2021-01-08&emsp;16:41:03</td>
+                                <th>承包协议：</th>
+                                <td><a href="javascript:;" class="J-xieyi">《项目承包经营服务协议》</a>&emsp;<a href="javascript:;" class="J-yulan">下载预览</a></td>
+                                <th></th>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="footer-con">
+            &copy; Copyright 2020 多多优采&emsp;|&emsp;技术支持：<a>厦门市旅动力信息有限公司</a>
+        </div>
+    </div>
+
+<script type="text/html" id="tpl-mobile-qrcode">
+    <div class="qrcode text-c" data-url="{{#qrcode_url}}">
+        <p>手机扫码预订产品：</p>
+        <div id="qrcode_order" class="text-c sub-img-auto mg-t-10"></div>
+    </div>
+</script>
+
+<script type="text/html" id="tpl-xieyi">
+    <h3>承包经营综合服务协议</h3>
+    <div class="text-con">
+        <p>本协议由您与旅业盒子平台入驻服务商（以下简称“服务商”）在线共同签署，在点击或选择同意本协议之前，应当认真阅读本协议。请您务必审慎阅读、充分理解各条款内容，特别是免除或者限制责任的条款、法律适用和争议解决条款。免除或者限制责任的条款将以粗体标识，您应重点阅读。当您按照注册页面提示填写信息、阅读并同意本协议，即表示您已充分阅读、理解并接受本协议的全部内容，并与我们达成一致。</p>
+        <p>您因业务的发展需要通过承包经营购买服务商提供的服务，为提高经营效率和服务质量，降低交易成本获取最具性价比的服务，您拟通过旅业盒子平台进行交易撮合。</p>
+        <strong>第一条 定义</strong>
+        <p>1.1旅业盒子平台（以下简称“平台”）：是根据《中华人民共和国电子商务法》《中华人民共和国公司法》所设立的市场主体和电子商务平台经营者，是指我们运用大数据、人工智能技术开发的企业承包经营数字化经营和服务交易平台，在电子商务中为交易双方或者多方提供网络经营场所、交易撮合、信息发布等服务的电商平台。</p>
+        <p>1.2平台服务：是指平台基于互联网，以包含平台网站、微信公众服务号等在内的各种形态（包括未来技术发展出现的新的服务形态）向您提供的各项服务。</p>
+        <p>1.3承包商：是指以专业技能为基础，通过我们提供的电子商务平台从事生产经营活动，自负盈亏，生产资料及生产经营成果归个人或平台经营主体，包括但不限于相关法律法规所规定的个人或机构。</p>
+        <p>1.4服务商：是指为承包商提供经纪服务的互联网公司，需要为在平台上入驻的承包商对接企业外包业务。</p>
+        <p>1.5承包经营收入：是指承包商从事生产经营活动取得的对价。</p>
+        <p>1.6服务费:是指我们为您提供承包经营服务的对价。</p>
+        <strong>第二条 合作方式</strong>
+        <p>2.1您委托服务商，为您提供综合服务。包括但不限于通过平台运营的“基于人工智能的智能化人力资源管理系统”、“跨银行涉税结算云平台”、“个人经营者信息采集比对系统”、“涉税服务智能管理系统”为您寻找筛选适合其技能条件的承包商；为承包商进行承包收入的结算，同时按照国家相关规定代扣代征代缴承包收入所涉及的个人经营性所得税；为您和承包商提供工商税务登记代办和资料汇总服务；为您收集相关人员的信息并通过互联网算法进行筛选服务；为您匹配适合业务要求的个人经营者进行数据比对、筛选、推送；服务商按照您相应类型外包业务的需求通过网络面向广大拥有个人技能的个人经营者，介绍其外包服务并邀请其从事众包服务。</p>
+        <p>2.2您通过平台注册登录，在平台上发布任务需求以购买服务，每次购买服务的产生结算单据、服务购买清单等相关电子单据、实体单据均视为本协议的补充附件，与本协议具有同等效力。</p>
+        <p>2.3您购买服务的类型、单价、总价、数量等具体订单信息以经双方确认的订单信息为准。</p>
+        <strong>第三条 订单信息</strong>
+        <p>任务订单号：11012021010511203526010100000010</p>
+        <p>发布时间：2020-12-31 11:20:35</p>
+        <p>任务周期：2021-01-01 00:00:00 - 2021-01-07 23:59:59</p>
+        <p>任务名称：人力资源绩效服务</p>
+        <p>任务类型：信息化规划设计和咨询</p>
+        <p>支付方式：线下银行汇款</p>
+        <p>总价：10元</p>
+        <strong>第四条 您权利和义务</strong>
+        <p>4.1您在发布任务需求的同时应当根据相关确认单据向平台支付全额服务费，服务商委托平台代为处理服务费收支事宜。</p>
+        <p>4.2承包经营成果完成交付验收后，您应当及时通过平台进行确认，确认验收后，服务商应当按照与承包商约定的标准与承包商结算完税后的承包经营收入，如承包商与服务商如发生纠纷，您无需承担任何法律责任。</p>
+        <p>4.3您不得对服务商实施隐瞒、欺诈行为，利用平台从事违反法律、法规的非法的行为，如因前述行为给服务商造成经济损失，您应当予以赔偿。</p>
+        <strong>第五条 服务商权利义务</strong>
+        <p>5.1服务商有权根据您对承包经营项目的实际需要和要求委托给符合要求的承包商完成，但服务商应当保证外包项目的交付质量并对您负责。</p>
+        <p>5.2承包商的筛选、确定过程您不得予以干涉，您如发现筛选确认的承包商不符合法律、法规的规定，您有义务及时告知服务商进行更换。</p>
+        <p>5.3 平台在收到您支付的外包服务费后7个工作日内，应当向您开具并寄出外包服务费对应的合规发票，但因您迟延提供开票信息、税务部门的客观原因、法定不抗力因素导致服务商逾期开票的除外，开票的内容及类型由您通过平台内操作系统确认的信息为准。</p>
+        <strong>第六条 合作期限</strong>
+        <p>6.1本协议有效期为1年，协议自签署之日起生效。</p>
+        <p>6.2协议到期后，如双方未做出不予延长意思表示，本协议自动延长一年，直至一方做出不予延长的决定。</p>
+        <strong>第七条 违约责任与协议解除</strong>
+        <p>7.1任何一方违反本协议约定，该方构成违约。除本协议另行约定外，违约方应向守约方承担违约损害责任，赔偿守约方因违约行为造成的直接或间接经济损失（包括但不限于合理的律师费、诉讼费、公证费等）。</p>
+        <p>7.2如因违约导致协议被解除，守约方可以同时主张解除协议和承担违约责任。</p>
+        <p>7.3任何一方违反协议约定，守约方可以向违约方书面出具违约提示函，要求违约方及时履行协议或采取必要的补救措施，违约方在收到违约提示函后未采取有效措施阻止经济损失扩大的，违约方应当对因此扩大的经济损失承担赔偿责任。</p>
+        <p>7.4因法律法规及政府政策重大变动导致本协议实际履行不能或继续履行对某方显失公平的，任何一方均可书面通知对方解除协议。</p>
+        <p>7.5协议项下各方声明、承诺和保证，任何一方已披露、签署和履行本协议所应当向另一方披露的全部信息，其内容真实、准确、无遗漏。</p>
+        <p>7.6由于您是一家具有广泛市场品牌认知度的机构,为合理保护您商业信誉,服务商如需将所承接的外包项目转包、众包给其他第三方承包商,需在项目通过平台自动审核后及时将相关费用通过平台客户端结算给第三方承包商,如服务商因自身原因存在恶意拖欠承包经营款项给您商业信誉造成恶劣影响,服务商将承担相应的法律责任。</p>
+        <strong>第八条 协议效力与争议解决</strong>
+        <p>8.1如本协议的任何条款无论因何种原因完全或部分无效，应视为该条款与本协议相分割，本协议的其他条款仍然完全有效并具有约束力。双方可就无效的条款重新达成一致，签署补充协议。</p>
+        <p>8.2本协议履行过程中发生任何争议，首先应当由双方协商解决，协商不成的双方一致同意向平台所在地有管辖权的人民法院起诉。</p>
+    </div>
+</script>
+<script src="static/js/layui/layui.js"></script>
+<script src="static/js/layui/config.js"></script>
+<!-- <script src="static/js/qrcode.min.js"></script> -->
+
+<script>
+    layui.use(['laydate', 'layer', 'table', 'form', 'upload', 'element', 'laytpl'], function () {
+        var $ = layui.jquery
+            , laydate = layui.laydate //日期
+            , layer = layui.layer //弹层
+            , table = layui.table // 表格
+            , form = layui.form //表单
+            , upload = layui.upload
+            , element = layui.element //元素操作
+            , laytpl = layui.laytpl
+
+        
+        //日期范围
+        laydate.render({
+            elem: '#start_date'
+            ,range: true
+        });
+        
+
+        $('.J-xieyi').click(function(){
+            layer.open({
+                type: 1
+                , title: '手机预订'
+                , area: ['1000px', '80%']
+                , shade: .3
+                , btnAlign: 'c'
+                , skin: 'layer-xieyi-con'
+                , content: $('#tpl-xieyi').html()
+                , btn: ['关闭'] //只是为了演示
+                , success: function(){
+                }
+                , yes: function (index, layero) {
+                    layer.closeAll()
+                }
+            });
+        })
+
+        //如果是iframe层
+        $('.J-yulan').click(function(){
+            layer.open({
+                type: 2
+                , title: '地址关联'
+                , area: ['90%', '90%']
+                , shade: .3
+                , btnAlign: 'c'
+                , maxmin: true
+                , content: 'http://view.officeapps.live.com/op/view.aspx?src=http://video.ch9.ms/build/2011/slides/TOOL-532T_Sutter.pptx'
+                , btn: ["提交",'关闭']
+                , success: function(layero, index){
+                }
+                , yes: function (index, layero) {
+                }
+            });
+        })
+
+    })
+
+</script>
+</body>
+</html>

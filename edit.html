@@ -1,0 +1,238 @@
+<link rel="stylesheet" href="/static/js/layui/css/layui.css">
+<link rel="stylesheet" href="/static/css/iframeWrap.css">
+
+<div class="iframeWrap layui-form">
+    <form name="J_supplier_form" method="post" id="supplier_form" enctype="multipart/form-data"
+        target="supplier_t_iframe" action="/supplier/do_edit_supplier?callback=callbackFun">
+        <input type="hidden" name="is_add" value="0">
+        <input type="hidden" name="id" value="6">
+        <table class="table-flex table-form mg-t-20 th-w-120">
+            <tbody>
+                <tr>
+                    <th>ID：</th>
+                    <td>
+                        <div class="layui-input-inline">
+                            <input type="text" name="" value="3501265987744" placeholder="" class="layui-input ui-w300">
+                        </div>
+                        <i class="iconfont icon-zhushi J-why-l" data-title="可退票，有退票手续费，详情咨询客服021-52830800"></i>
+                    </td>
+                    <th>联系人/电话：</th>
+                    <td>
+                        <div class="layui-input-inline">
+                            <input type="text" name="" value="" placeholder="联系人" class="layui-input ui-w100">
+                        </div>
+                        <div class="layui-input-inline">
+                            <input type="text" name="" value="" placeholder="电话" class="layui-input ui-w200">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th><sup>*</sup>企业名称：</th>
+                    <td>
+                        <div class="layui-input-inline">
+                            <input type="text" name="username" lay-verify="required|username" lay-reqtext=""
+                                value="厦门宝中国际旅行社" placeholder="" class="layui-input ui-w300">
+                        </div>
+                        <i class="iconfont icon-zhushi J-why-r" data-title="可退票，有退票手续费，详情咨询客服021-52830800"></i>
+                    </td>
+                    <th>财务姓名/电话：</th>
+                    <td>
+                        <div class="layui-input-inline">
+                            <input type="text" name="" value="" placeholder="联系人" class="layui-input ui-w100">
+                        </div>
+                        <div class="layui-input-inline">
+                            <input type="text" name="" value="" placeholder="电话" class="layui-input ui-w200">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th><sup>*</sup>企业类型：</th>
+                    <td>
+                        <div class="layui-input-inline ui-w150">
+                            <select name="" lay-verify="required" lay-reqtext="选择企业类型" class="" lay-filter="test">
+                                <option value="0">选择企业类型</option>
+                                <option value="1">江泰保险</option>
+                                <option value="2" selected="">太平洋保险</option>
+                            </select>
+                            <div class="layui-unselect layui-form-select">
+                                <div class="layui-select-title"><input type="text" placeholder="请选择" value="太平洋保险"
+                                        readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div>
+                                <dl class="layui-anim layui-anim-upbit">
+                                    <dd lay-value="0" class="">选择企业类型</dd>
+                                    <dd lay-value="1" class="">江泰保险</dd>
+                                    <dd lay-value="2" class="layui-this">太平洋保险</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <span class="exp">这是一段注释文字这是一段注释文字</span>
+                    </td>
+                    <th>客户经理/电话：</th>
+                    <td>
+                        <div class="layui-input-inline">
+                            <input type="text" name="" value="" placeholder="联系人" class="layui-input ui-w100">
+                        </div>
+                        <div class="layui-input-inline">
+                            <input type="text" name="" value="" placeholder="电话" class="layui-input ui-w200">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th><sup>*</sup>行业类型：</th>
+                    <td>
+                        <div class="layui-input-inline ui-w150">
+                            <select name="" lay-verify="required" lay-reqtext="" class="" lay-filter="">
+                                <option value="" selected="">选择行业类型</option>
+                                <option value="1">江泰保险</option>
+                            </select>
+                            <div class="layui-unselect layui-form-select">
+                                <div class="layui-select-title"><input type="text" placeholder="选择行业类型" value=""
+                                        readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div>
+                                <dl class="layui-anim layui-anim-upbit">
+                                    <dd lay-value="" class="layui-select-tips">选择行业类型</dd>
+                                    <dd lay-value="1" class="">江泰保险</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="layui-input-inline ui-w150">
+                            <select name="" lay-verify="required" lay-reqtext="" class="" lay-filter="">
+                                <option value="" selected="">选择二级行业类型</option>
+                                <option value="1">江泰保险</option>
+                            </select>
+                            <div class="layui-unselect layui-form-select">
+                                <div class="layui-select-title"><input type="text" placeholder="选择二级行业类型" value=""
+                                        readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div>
+                                <dl class="layui-anim layui-anim-upbit">
+                                    <dd lay-value="" class="layui-select-tips">选择二级行业类型</dd>
+                                    <dd lay-value="1" class="">江泰保险</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </td>
+                    <th>交付专家/电话：</th>
+                    <td>
+                        <div class="layui-input-inline">
+                            <input type="text" name="" value="" placeholder="联系人" class="layui-input ui-w100">
+                        </div>
+                        <div class="layui-input-inline">
+                            <input type="text" name="" value="" placeholder="电话" class="layui-input ui-w200">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th><sup>*</sup>所在区：</th>
+                    <td>
+                        <div class="layui-input-inline">
+                            <div class="layui-inline" style="width: 100px;">
+                                <select name="prov_id" lay-filter="prov_id" value="">
+                                    <option value="">请选择省</option>
+                                </select>
+                            </div>
+                            <div class="layui-inline" style="width: 150px;">
+                                <select name="city_id" lay-filter="city_id" value="" disabled>
+                                    <option value="">请选择市</option>
+                                </select>
+                            </div>
+                            <div class="layui-inline" style="width: 150px;">
+                                <select name="county_id" lay-filter="county_id" value="" disabled>
+                                    <option value="">请选县/区</option>
+                                </select>
+                            </div>
+                        </div>
+                    </td>
+                    <th>通讯邮箱：</th>
+                    <td>
+                        <div class="layui-input-inline">
+                            <input type="text" name="" value="" placeholder="电话" class="layui-input ui-w150">
+                        </div>
+                        <div class="layui-input-inline ui-w150">
+                            <select name="" class="" lay-filter="">
+                                <option value="" selected="">选择二级行业类型</option>
+                                <option value="1">江泰保险</option>
+                            </select>
+                            <div class="layui-unselect layui-form-select">
+                                <div class="layui-select-title"><input type="text" placeholder="选择二级行业类型" value=""
+                                        readonly="" class="layui-input layui-unselect"><i class="layui-edge"></i></div>
+                                <dl class="layui-anim layui-anim-upbit">
+                                    <dd lay-value="" class="layui-select-tips">选择二级行业类型</dd>
+                                    <dd lay-value="1" class="">江泰保险</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>营业执照：</th>
+                    <td>
+                        <div class="layui-upload">
+                            <button type="button" class="layui-btn plain" id="test1">上传图片</button><input
+                                class="layui-upload-file" type="file" accept="" name="file" multiple="">
+                            <i class="iconfont icon-zhushi J-why-c"></i>
+                            <div class="layui-hide">
+                                <p>可退票，有退票手续费，详情咨询客服021-52830800可退票，有退票手续费，详情咨询客服021-52830800"</p>
+                                <p>可退票，有退票手续费，详情咨询客服021-52830800可退票，有退票手续费，详情咨询客服021-52830800"</p>
+                                <p>可退票，有退票手续费，详情咨询客服021-52830800可退票，有退票手续费，详情咨询客服021-52830800"</p>
+                            </div>
+                            <input class="layui-upload-file" type="file" accept="" name="file" lay-verify=""
+                                lay-reqtext="">
+                            <ul class="layui-upload-list" id="upload-list">
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <!-- <tr>
+                    <th></th>
+                    <td>
+                        <div class="btn-con">
+                            <a href="javascript:;" class="layui-btn" lay-submit="" lay-filter="formSubmit">确定保存</a>
+                        </div>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+    </form>
+</div>
+
+<script src="/static/js/layui/layui.js"></script>
+<script src="/static/js/layui/config.js"></script>
+<script src="/static/js/layui/area_json.js"></script>
+<script>
+    layui.use(['laydate', 'laypage', 'layer', 'table', 'form', 'element', 'upload', 'layuiarea'], function () {
+        var $ = layui.jquery
+            , laydate = layui.laydate //日期
+            , laypage = layui.laypage //分页
+            , layer = layui.layer //弹层
+            , form = layui.form //表单
+            , table = layui.table //表格
+            , upload = layui.upload
+            , element = layui.element; //元素操作
+
+        // 城市联动
+        layuiarea = layui.layuiarea()
+
+        //普通图片上传
+        var uploadInst = upload.render({
+            elem: '#test1'
+            // ,url: 'https://httpbin.org/post' //改成您自己的上传接口
+            , before: function (obj) {
+                //预读本地文件示例，不支持ie8
+                obj.preview(function (index, file, result) {
+                    $('#demo1').attr('src', result); //图片链接（base64）
+                });
+            }
+        });
+        //普通图片上传
+        var uploadInst = upload.render({
+            elem: '#test2'
+            // ,url: 'https://httpbin.org/post' //改成您自己的上传接口
+            , before: function (obj) {
+                //预读本地文件示例，不支持ie8
+                obj.preview(function (index, file, result) {
+                    $('#demo2').attr('src', result); //图片链接（base64）
+                });
+            }
+        });
+    });
+</script>
+</body>
+
+</html>

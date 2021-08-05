@@ -1,0 +1,218 @@
+$red: #f00;
+$orange: #ff9100;
+$yellow: #fee21f;
+$blue: #4993fd;
+$green: #67C23A;
+$grey: #c6c6c6;
+$redRgb: rgba(255, 0, 0, .1);
+$orangeRgb: rgba(255, 145, 0, .1);
+$yellowRgb: rgba(75, 147, 253, .1);
+$blueRgb: rgba(75, 147, 253, .1);
+$greenRgb: rgba(103, 194, 58, .1);
+$greyRgb: rgba(198, 198, 198, .1);
+
+$c-primary: #07c160;
+$c-info: #2b40e9;
+$c-warning: #f63;
+$c-danger: #f00;
+
+
+$ipt: !important;
+$xl: 25px$ipt;
+$lg: 20px$ipt;
+$md: 15px$ipt;
+$sm: 10px$ipt;
+$xs: 5px$ipt;
+
+
+
+@mixin sticky($type:top,$size:0){
+	position: sticky$ipt;
+	@if($type == bottom){
+		bottom: $size
+	}@else{
+		top: $size
+	}
+}
+
+
+//文字溢出省略处理（单行）
+@mixin ellipsis{
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+//文字溢出省略处理（支持多行）
+@mixin ellipsis2($val:2){
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $val;
+	overflow: hidden;
+}
+
+@mixin icon{
+	display: inline-block;
+	margin: -.04rem .05rem 0 0;
+	vertical-align: middle;
+}
+//三角icon
+@mixin triangle($type:t, $col: #727272, $borderWidth: 5px){
+    display: inline-block;
+	border: transparent solid $borderWidth;
+	@if $type == t{
+		margin-top: -$borderWidth;
+		border-bottom-color: $col;
+	} @else if $type == r {
+		margin-left: $borderWidth;
+		border-left-color: $col;
+	} @else if $type == b {
+		margin-bottom: -$borderWidth;
+		border-top-color: $col;
+	} @else if $type == l {
+		margin-right: $borderWidth;
+		border-right-color: $col;
+	}
+	vertical-align: middle;
+}
+//箭头icon
+@mixin arrow($type:t, $col: #727272, $width: 8px, $borderWidth: 1px){
+	display: inline-block;
+    width: $width;
+    height: $width;
+    margin: 0 0 0 .1rem;
+    border-top: $borderWidth solid $col;
+    border-right: $borderWidth solid $col;
+	vertical-align: middle;
+	@if $type == t{
+		margin-top: .1rem;
+		transform: rotate(-45deg);
+    	-webkit-transition: all 0.2s ease-in
+	} @else if $type == r {
+		transform: rotate(45deg);
+    	-webkit-transition: all 0.2s ease-in
+	} @else if $type == b {
+		margin-top: -.1rem;
+		transform: rotate(135deg);
+    	-webkit-transition: all 0.2s ease-in
+	} @else if $type == l {
+		transform: rotate(-135deg);
+    	-webkit-transition: all 0.2s ease-in
+	}
+    
+}
+
+// 动画组
+@mixin ani($t: .4s, $d: 0s, $m: ease-in){
+	transition: all $t $m $d;
+}
+@mixin anim($name: all, $duration: .4s, $ease: ease-in, $delay: 0, $count: 1, $direction: normal) {
+	animation-name: $name; //动画名称
+	animation-duration: $duration; //动画周期时间 1s
+	animation-timing-function: $ease; //动画曲线 ease-in
+	animation-delay: $delay; //是否延迟
+	animation-iteration-count: $count; //播放次数 循环播放 infinite
+	animation-direction: $direction; //一周期逆向播放 normal、alternate
+	animation-fill-mode:forwards;
+	@if $count == 1{
+	}
+}
+
+@mixin justify($type:c) {
+    @if $type==fs {
+        justify-content: flex-start;
+    }
+    @else if $type==fe {
+        justify-content: flex-end;
+    }
+    @else if $type==c {
+        justify-content: center;
+    }
+    @else if $type==sb {
+        justify-content: space-between;
+    }
+    @else if $type==sa {
+        justify-content: space-around;
+    }
+}
+
+@mixin align-content($type:c) {
+    @if $type==fs {
+        align-content: flex-start;
+    }
+
+    @else if $type==fe {
+        align-content: flex-end;
+    }
+
+    @else if $type==c {
+        align-content: center;
+    }
+
+    @else if $type==sb {
+        align-content: space-between;
+    }
+
+    @else if $type==sa {
+        align-content: space-around;
+    }
+}
+
+@mixin align-items($type:c) {
+    @if $type==fs {
+        align-items: flex-start;
+    }
+
+    @else if $type==fe {
+        align-items: flex-end;
+    }
+
+    @else if $type==c {
+        align-items: center;
+    }
+
+    @else if $type==sb {
+        align-items: space-between;
+    }
+
+    @else if $type==sa {
+        align-items: space-around;
+    }
+}
+
+@mixin align-self($type:c) {
+    @if $type==fs {
+        align-self: flex-start;
+    }
+
+    @else if $type==fe {
+        align-self: flex-end;
+    }
+
+    @else if $type==c {
+        align-self: center;
+    }
+
+    @else if $type==s {
+        align-self: stretch;
+    }
+
+    @else if $type==b {
+        align-self: baseline;
+    }
+}
+
+@mixin order($val) {
+    order: $val;
+}
+
+@mixin wrap-gap($wrap,$gap){
+	flex-wrap: wrap;
+	padding: 0 ($gap/2);
+	&>div,&>a{
+			width: calc(#{$wrap} - #{$gap})!important;
+			margin: calc(#{$gap}/2);
+	}
+}
+
+
